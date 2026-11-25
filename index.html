@@ -4,689 +4,360 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akselerasi Consulting | Accelerate Your Potential</title>
-<meta name="description" content="Akselerasi Consulting menyediakan psikotes online, konseling, assessment, learning, webinar, dan pengembangan potensi diri.">
+<title>Akselerasi Consulting | Psikologi, Asesmen & Pengembangan Potensi</title>
+<meta name="description" content="Akselerasi Consulting membantu individu dan organisasi mengenali potensi, mengembangkan kompetensi, psikotes, konseling, pelatihan dan solusi SDM.">
+<meta name="theme-color" content="#173f35">
+<meta property="og:title" content="Akselerasi Consulting">
+<meta property="og:description" content="Kenali Potensi. Kembangkan Kompetensi. Akselerasi Masa Depan.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --green: #31775f;
-  --green-dark: #205640;
-  --mint: #e7f2ec;
-  --navy: #24364b;
-  --cream: #fbfaf6;
-  --orange: #e7a36c;
-  --text: #334155;
-  --muted: #778394;
-  --white: #ffffff;
+:root{
+  --green:#17483c;
+  --green2:#286454;
+  --sage:#dce9df;
+  --sage-light:#eef4ed;
+  --cream:#faf8f2;
+  --orange:#e99b61;
+  --navy:#202f3c;
+  --text:#283b36;
+  --muted:#71817b;
+  --white:#ffffff;
+  --border:#e6e9e2;
+  --shadow:0 20px 60px rgba(24,61,50,.08);
 }
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: var(--cream);
-  color: var(--navy);
-  line-height: 1.6;
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{
+  font-family:'DM Sans',sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.65;
 }
-
-a { text-decoration: none; color: inherit; }
-
-.container {
-  width: min(1180px, 92%);
-  margin: auto;
+h1,h2,h3,h4{
+  font-family:'Manrope',sans-serif;
+  letter-spacing:-.035em;
+  line-height:1.2;
 }
-
-/* NAVIGATION */
-
-header {
-  background: rgba(255,255,255,.96);
-  border-bottom: 1px solid #edf0ed;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+a{text-decoration:none;color:inherit}
+button{font:inherit;cursor:pointer}
+.container{width:min(1160px,91%);margin:auto}
+.section{padding:92px 0}
+.section-head{max-width:660px;margin-bottom:44px}
+.section-head.center{text-align:center;margin-left:auto;margin-right:auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:9px;
+  color:var(--green2);font-size:12px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-height: 76px;
+.eyebrow:before{
+  content:"";width:24px;height:2px;background:var(--orange)
 }
-
-.logo {
-  font-size: 21px;
-  font-weight: 800;
-  color: var(--green-dark);
-  letter-spacing: -.5px;
+.section-head h2{font-size:clamp(30px,4vw,46px);margin-bottom:16px}
+.section-head p{color:var(--muted);font-size:16px}
+.btn{
+  display:inline-flex;justify-content:center;align-items:center;gap:10px;
+  padding:14px 23px;border-radius:8px;font-weight:700;font-size:14px;
+  border:1px solid transparent;transition:.25s
 }
-
-.logo span {
-  color: var(--orange);
+.btn-primary{background:var(--green);color:white}
+.btn-primary:hover{background:#10362d;transform:translateY(-2px)}
+.btn-outline{border-color:#cbd8cf;color:var(--green)}
+.btn-outline:hover{background:var(--sage-light)}
+.btn-white{background:white;color:var(--green)}
+.btn-white:hover{background:var(--cream)}
+.btn-orange{background:var(--orange);color:#263a33}
+.btn-orange:hover{filter:brightness(.96);transform:translateY(-2px)}
+/* HEADER */
+header{
+  position:sticky;top:0;z-index:1000;
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(0,0,0,.045)
 }
-
-.nav-menu {
-  display: flex;
-  gap: 25px;
-  align-items: center;
-  font-size: 14px;
-  color: #536173;
+.nav{
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:24px
 }
-
-.nav-menu a:hover {
-  color: var(--green);
+.brand{display:flex;align-items:center;gap:11px}
+.logo{
+  width:43px;height:43px;background:var(--green);
+  border-radius:12px;display:flex;align-items:center;
+  justify-content:center;color:#fff;font-family:Manrope;
+  font-weight:800;font-size:17px
 }
-
-.btn {
-  display: inline-block;
-  padding: 13px 20px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  transition: .2s;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-}
-
-.btn-green {
-  color: white;
-  background: var(--green);
-}
-
-.btn-green:hover {
-  background: var(--green-dark);
-}
-
-.btn-outline {
-  border: 1px solid #d5e2d9;
-  background: white;
-}
-
-.menu-toggle {
-  display: none;
-  padding: 9px 12px;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
+.brand-text{line-height:1.25}
+.brand-text strong{display:block;font-family:Manrope;font-size:15px}
+.brand-text small{font-size:10px;color:var(--muted);letter-spacing:1.4px}
+.nav-links{display:flex;align-items:center;gap:27px}
+.nav-links a{font-size:13px;font-weight:600;color:#465750}
+.nav-links a:hover{color:var(--green2)}
+.nav-cta{padding:11px 17px;font-size:13px}
+.menu-btn{display:none;border:0;background:transparent;font-size:26px;color:var(--green)}
 /* HERO */
-
-.hero {
-  background: var(--mint);
-  padding: 75px 0;
-  overflow: hidden;
+.hero{
+  position:relative;overflow:hidden;
+  background:var(--cream);padding:72px 0 80px
 }
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  align-items: center;
-  gap: 45px;
+.hero:before{
+  content:"";position:absolute;width:550px;height:550px;
+  border-radius:50%;background:#e3ece2;right:-190px;top:-160px
 }
-
-.badge {
-  display: inline-block;
-  padding: 8px 13px;
-  background: #d5e9dc;
-  color: var(--green-dark);
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: bold;
+.hero-grid{
+  position:relative;display:grid;grid-template-columns:1.04fr .96fr;
+  align-items:center;gap:60px
 }
-
-.hero h1 {
-  font-size: clamp(38px, 5vw, 60px);
-  line-height: 1.12;
-  margin: 22px 0;
-  letter-spacing: -2px;
+.hero h1{font-size:clamp(39px,5.3vw,65px);color:var(--green);margin-bottom:22px}
+.hero h1 span{color:#db915a}
+.hero-copy{font-size:17px;color:#64746d;max-width:520px;margin-bottom:29px}
+.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}
+.hero-note{display:flex;align-items:center;gap:10px;margin-top:27px;color:#708079;font-size:12px}
+.hero-note .dots{color:var(--orange);font-size:20px}
+.hero-visual{position:relative;min-height:440px}
+.hero-image{
+  position:absolute;inset:10px 0 15px 25px;border-radius:28px;
+  background:
+  linear-gradient(180deg,rgba(23,72,60,.02),rgba(23,72,60,.15)),
+  url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85')
+  center/cover;
 }
-
-.hero h1 span {
-  color: var(--green);
+.hero-badge{
+  position:absolute;bottom:5px;left:0;background:#fff;
+  border-radius:16px;padding:17px 20px;box-shadow:var(--shadow);
+  display:flex;gap:12px;align-items:center
 }
-
-.hero p {
-  color: #61766a;
-  font-size: 17px;
-  max-width: 560px;
+.badge-icon{width:44px;height:44px;background:var(--sage-light);
+border-radius:12px;display:grid;place-items:center;font-size:20px}
+.hero-badge strong{display:block;font-size:14px}
+.hero-badge small{color:var(--muted);font-size:11px}
+.hero-floating{
+  position:absolute;top:35px;right:-20px;background:white;
+  padding:15px 18px;border-radius:15px;box-shadow:var(--shadow);
+  font-size:12px
 }
-
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  margin-top: 28px;
-  flex-wrap: wrap;
+.hero-floating strong{display:block;color:var(--green);font-size:14px}
+/* TRUST STRIP */
+.trust{padding:26px 0;border-bottom:1px solid var(--border)}
+.trust-grid{display:flex;justify-content:center;gap:40px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:9px;font-size:13px;color:#63736c}
+.trust-item span{color:var(--green);font-size:18px}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.about-art{
+  background:var(--sage-light);padding:28px;border-radius:25px;
+  min-height:370px;position:relative;overflow:hidden
 }
-
-.hero-visual {
-  min-height: 370px;
-  background: #d3e6d8;
-  border-radius: 45% 55% 55% 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+.about-art img{width:100%;height:315px;object-fit:cover;border-radius:17px}
+.about-stat{
+  position:absolute;bottom:14px;right:14px;background:white;
+  padding:14px 19px;border-radius:14px;box-shadow:var(--shadow)
 }
-
-.hero-visual-inner {
-  width: 75%;
-  height: 290px;
-  background: linear-gradient(140deg, #66977d, #2f6650);
-  border-radius: 140px 140px 25px 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 85px;
-}
-
-.floating-card {
-  position: absolute;
-  background: white;
-  border-radius: 14px;
-  padding: 14px 18px;
-  box-shadow: 0 12px 30px #294d3815;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.float-one { top: 30px; left: 0; }
-.float-two { right: 0; bottom: 30px; }
-
-.floating-card small {
-  display: block;
-  color: var(--muted);
-  font-weight: normal;
-}
-
-/* SECTION */
-
-section {
-  padding: 75px 0;
-}
-
-.section-heading {
-  max-width: 700px;
-  margin-bottom: 35px;
-}
-
-.section-heading small {
-  color: var(--green);
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.section-heading h2 {
-  font-size: clamp(27px, 3vw, 38px);
-  line-height: 1.2;
-  margin: 10px 0;
-  letter-spacing: -.8px;
-}
-
-.section-heading p {
-  color: var(--muted);
-}
-
+.about-stat strong{color:var(--green);font-size:23px}
+.about-stat small{display:block;color:var(--muted);font-size:11px}
+.about-copy h2{font-size:clamp(30px,4vw,42px);margin-bottom:18px}
+.about-copy p{color:var(--muted);margin-bottom:18px}
+.about-points{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:25px 0}
+.about-point{display:flex;gap:9px;font-size:13px;font-weight:600}
+.about-point span{color:#4d896c}
 /* SERVICES */
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+.services{background:var(--cream)}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+.service-card{
+  background:white;border:1px solid #edf0e9;border-radius:17px;
+  padding:24px 21px;transition:.25s
 }
-
-.service-card {
-  background: white;
-  border: 1px solid #eceeea;
-  padding: 23px;
-  border-radius: 18px;
-  transition: .2s;
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.service-icon{
+  width:49px;height:49px;display:grid;place-items:center;
+  background:var(--sage-light);border-radius:14px;font-size:23px;margin-bottom:18px
 }
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px #233c2810;
+.service-card h3{font-size:17px;margin-bottom:10px}
+.service-card p{font-size:13px;color:var(--muted);margin-bottom:19px}
+.card-link{font-size:13px;color:var(--green2);font-weight:700}
+/* TEST */
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}
+.test-card{
+  border:1px solid var(--border);border-radius:17px;overflow:hidden;
+  background:#fff;transition:.2s
 }
-
-.service-icon {
-  width: 53px;
-  height: 53px;
-  border-radius: 15px;
-  display: grid;
-  place-items: center;
-  font-size: 25px;
-  margin-bottom: 18px;
-}
-
-.service-card h3 {
-  font-size: 17px;
-  margin-bottom: 8px;
-}
-
-.service-card p {
-  color: var(--muted);
-  font-size: 13px;
-  margin-bottom: 18px;
-}
-
-.service-card a {
-  color: var(--green);
-  font-weight: bold;
-  font-size: 13px;
-}
-
-/* PSIKOTES */
-
-.tests {
-  background: white;
-}
-
-.test-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.test-card {
-  border: 1px solid #e9eee9;
-  border-radius: 17px;
-  overflow: hidden;
-}
-
-.test-cover {
-  height: 145px;
-  display: grid;
-  place-items: center;
-  font-size: 45px;
-}
-
-.test-content {
-  padding: 20px;
-}
-
-.test-content h3 {
-  margin-bottom: 8px;
-}
-
-.test-content p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.test-tag {
-  display: inline-block;
-  padding: 5px 9px;
-  border-radius: 20px;
-  background: #e5f4ea;
-  color: #327b56;
-  font-size: 11px;
-  font-weight: bold;
-  margin-top: 12px;
-}
-
+.test-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.test-cover{height:175px;position:relative;overflow:hidden}
+.test-cover img{width:100%;height:100%;object-fit:cover}
+.test-cover:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,55,45,.18),transparent)}
+.test-body{padding:22px}
+.test-tag{display:inline-block;background:var(--sage-light);color:var(--green);
+font-size:10px;padding:5px 9px;border-radius:30px;font-weight:700;margin-bottom:10px}
+.test-body h3{font-size:18px;margin-bottom:9px}
+.test-body p{font-size:13px;color:var(--muted);min-height:60px}
+.test-meta{display:flex;justify-content:space-between;color:var(--muted);
+font-size:12px;border-top:1px solid var(--border);padding-top:14px;margin-top:16px}
+.test-price{font-weight:700;color:var(--green)}
 /* COUNSELING */
-
-.counseling {
-  background: #f4efe8;
+.counseling{background:#173f35;color:white}
+.counsel-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.counseling .eyebrow{color:#c5dfce}
+.counseling h2{font-size:clamp(31px,4vw,45px);margin-bottom:17px}
+.counseling p{color:#d0dfd8;margin-bottom:25px}
+.counsel-list{display:grid;gap:13px;margin-bottom:28px}
+.counsel-list div{display:flex;gap:12px;align-items:center;font-size:14px}
+.counsel-list span{color:#f0ae79}
+.counsel-img{height:410px;border-radius:25px;overflow:hidden}
+.counsel-img img{width:100%;height:100%;object-fit:cover}
+/* LEARNING */
+.learning-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+.learning-feature{
+  min-height:350px;border-radius:22px;padding:30px;position:relative;
+  display:flex;flex-direction:column;justify-content:flex-end;color:white;overflow:hidden
 }
-
-.counsel-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  align-items: center;
+.learning-feature:before{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(0deg,rgba(13,38,31,.85),rgba(13,38,31,.05)),
+  url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85') center/cover
 }
-
-.counsel-box {
-  padding: 38px;
-  border-radius: 25px;
-  background: #e8ddf4;
+.learning-feature>*{position:relative}
+.learning-feature h3{font-size:26px;margin-bottom:9px}
+.learning-feature p{font-size:14px;color:#e6eee9;margin-bottom:17px}
+.learning-side{display:grid;gap:20px}
+.learning-small{
+  display:flex;gap:18px;align-items:center;background:var(--cream);
+  border-radius:19px;padding:20px
 }
-
-.counsel-box h3 {
-  font-size: 27px;
-  margin-bottom: 12px;
-}
-
-.counsel-box p {
-  color: #706582;
-}
-
-.counsel-steps {
-  margin-top: 25px;
-  display: grid;
-  gap: 15px;
-}
-
-.counsel-step {
-  display: flex;
-  gap: 13px;
-  align-items: center;
-}
-
-.step-icon {
-  width: 38px;
-  height: 38px;
-  background: white;
-  border-radius: 11px;
-  display: grid;
-  place-items: center;
-}
-
-.counsel-step strong {
-  display: block;
-  font-size: 14px;
-}
-
-.counsel-step small {
-  color: var(--muted);
-}
-
-/* VIDEO */
-
-.video-section {
-  background: white;
-}
-
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.video-card {
-  border: 1px solid #e9eee9;
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-.video-cover {
-  height: 165px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.video-cover span {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.video-cover strong {
-  font-size: 23px;
-  line-height: 1.2;
-}
-
-.video-content {
-  padding: 18px;
-}
-
-.video-content h3 {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-.video-content p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
-.video-bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
+.learning-small img{width:112px;height:115px;object-fit:cover;border-radius:13px}
+.learning-small h3{font-size:17px;margin-bottom:8px}
+.learning-small p{font-size:12px;color:var(--muted);margin-bottom:10px}
 /* EBOOK */
-
-.ebook-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 17px;
+.ebook{background:var(--sage-light)}
+.ebook-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ebook-card{background:white;border-radius:17px;padding:23px;display:flex;gap:18px;align-items:center}
+.book{
+  width:95px;min-width:95px;height:130px;border-radius:6px 12px 12px 6px;
+  background:var(--green);color:white;display:flex;align-items:center;
+  justify-content:center;text-align:center;padding:10px;
+  box-shadow:7px 7px 0 #d4dfd4;font-family:Manrope;font-weight:800;font-size:13px
 }
-
-.ebook-card {
-  background: white;
-  padding: 14px;
-  border: 1px solid #e9eee9;
-  border-radius: 17px;
-}
-
-.book-cover {
-  height: 190px;
-  border-radius: 11px;
-  padding: 20px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.book-cover small {
-  font-size: 10px;
-  letter-spacing: 1px;
-}
-
-.book-cover strong {
-  font-size: 24px;
-  line-height: 1.1;
-}
-
-.ebook-card h3 {
-  font-size: 14px;
-  margin: 13px 0 6px;
-}
-
-.ebook-card p {
-  font-size: 12px;
-  color: var(--muted);
-}
-
-.book-price {
-  margin-top: 12px;
-  font-weight: bold;
-  color: var(--green);
-  font-size: 14px;
-}
-
+.book.orange{background:#c87947}
+.book.navy{background:#263c50}
+.ebook-card h3{font-size:15px;margin-bottom:7px}
+.ebook-card p{font-size:12px;color:var(--muted);margin-bottom:10px}
+.ebook-card a{font-size:12px;color:var(--green);font-weight:700}
 /* CORPORATE */
-
-.corporate {
-  background: var(--navy);
-  color: white;
+.corporate{
+  background:var(--cream);border-radius:28px;padding:55px;
+  display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center
 }
-
-.corporate-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 35px;
-  align-items: center;
-}
-
-.corporate h2 {
-  font-size: 36px;
-  line-height: 1.2;
-  margin: 12px 0;
-}
-
-.corporate p {
-  color: #c5d0dc;
-}
-
-.corporate-list {
-  display: grid;
-  gap: 13px;
-  margin: 25px 0;
-}
-
-.corporate-list div {
-  padding: 13px;
-  background: #ffffff10;
-  border-radius: 10px;
-}
-
+.corporate h2{font-size:38px;margin-bottom:17px}
+.corporate p{color:var(--muted);margin-bottom:24px}
+.corporate-list{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.corporate-list div{padding:15px;background:white;border-radius:12px;font-size:13px;font-weight:600}
+.corporate-list span{display:block;color:var(--green2);font-size:20px;margin-bottom:5px}
 /* ARTICLES */
-
-.article-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-
-.article-card {
-  background: white;
-  border: 1px solid #e9eee9;
-  border-radius: 17px;
-  overflow: hidden;
-}
-
-.article-cover {
-  height: 145px;
-  display: grid;
-  place-items: center;
-  font-size: 40px;
-}
-
-.article-content {
-  padding: 18px;
-}
-
-.article-content small {
-  color: var(--green);
-  font-weight: bold;
-}
-
-.article-content h3 {
-  font-size: 16px;
-  margin: 8px 0;
-}
-
-.article-content p {
-  color: var(--muted);
-  font-size: 13px;
-}
-
+.article-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.article-card{border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.article-card img{height:190px;width:100%;object-fit:cover}
+.article-body{padding:21px}
+.article-body small{color:var(--green2);font-weight:700;font-size:11px}
+.article-body h3{font-size:17px;margin:10px 0}
+.article-body p{font-size:13px;color:var(--muted);margin-bottom:15px}
 /* CTA */
-
-.cta {
-  padding: 55px 0;
+.cta{padding:30px 0 90px}
+.cta-box{
+  background:var(--green);border-radius:26px;padding:55px;
+  color:white;text-align:center;position:relative;overflow:hidden
 }
-
-.cta-box {
-  background: var(--green-dark);
-  border-radius: 24px;
-  padding: 42px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 25px;
+.cta-box:before,.cta-box:after{
+  content:"";position:absolute;border:1px solid rgba(255,255,255,.08);
+  border-radius:50%;width:350px;height:350px
 }
-
-.cta-box h2 {
-  font-size: 30px;
-  margin-bottom: 8px;
-}
-
-.cta-box p {
-  color: #d2e4d9;
-}
-
-.cta-box .btn {
-  background: white;
-  color: var(--green-dark);
-  white-space: nowrap;
-}
-
+.cta-box:before{top:-220px;left:-80px}
+.cta-box:after{bottom:-250px;right:-60px}
+.cta-box h2{font-size:clamp(29px,4vw,43px);margin-bottom:15px;position:relative}
+.cta-box p{color:#d8e5dd;max-width:600px;margin:0 auto 25px;position:relative}
+.cta-box .btn{position:relative}
 /* FOOTER */
-
-footer {
-  background: white;
-  border-top: 1px solid #e9eee9;
-  padding: 30px 0;
-  color: var(--muted);
-  font-size: 13px;
+footer{background:#112f28;color:white;padding:55px 0 25px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:35px}
+.footer-about p{font-size:13px;color:#b9ccc3;max-width:320px;margin-top:16px}
+footer h4{font-size:14px;margin-bottom:17px}
+footer a,footer p{font-size:13px;color:#b9ccc3}
+.footer-links{display:grid;gap:10px}
+.footer-links a:hover{color:white}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:38px;padding-top:22px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:12px;color:#91aaa0}
+/* WHATSAPP */
+.wa-float{
+  position:fixed;bottom:23px;right:22px;z-index:9999;
+  width:60px;height:60px;border-radius:50%;background:#20c66b;color:white;
+  display:grid;place-items:center;box-shadow:0 6px 25px rgba(32,198,107,.4);
+  transition:.2s
 }
-
-.footer-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:31px;height:31px}
+.wa-tooltip{
+  position:absolute;right:72px;white-space:nowrap;background:white;
+  color:#28433a;padding:10px 14px;border-radius:9px;
+  box-shadow:var(--shadow);font-size:12px;font-weight:700
 }
-
-/* MOBILE */
-
-@media(max-width:950px) {
-  .services,.ebook-grid {
-    grid-template-columns: repeat(2,1fr);
-  }
+/* RESPONSIVE */
+@media(max-width:1000px){
+ .nav-links{gap:16px}
+ .service-grid{grid-template-columns:repeat(2,1fr)}
+ .ebook-grid{grid-template-columns:1fr}
+ .corporate{padding:35px}
 }
-
-@media(max-width:700px) {
-  .nav { min-height: 66px; }
-  .nav-menu {
-    display: none;
-    position: absolute;
-    top: 66px;
-    left: 4%;
-    right: 4%;
-    background: white;
-    padding: 20px;
-    border: 1px solid #eee;
-    border-radius: 14px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-menu.open { display: flex; }
-  .menu-toggle { display: block; }
-  .nav .btn { display: none; }
-
-  .hero { padding: 45px 0; }
-  .hero-grid { grid-template-columns: 1fr; }
-  .hero h1 { letter-spacing: -1px; }
-  .hero-visual { min-height: 320px; }
-
-  section { padding: 48px 0; }
-
-  .services { grid-template-columns: 1fr 1fr; gap: 11px; }
-  .service-card { padding: 15px; }
-  .service-card p { font-size: 12px; }
-
-  .test-grid,.video-grid,.article-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .counsel-grid,.corporate-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .counsel-box { padding: 25px; }
-
-  .ebook-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
-  .ebook-card { padding: 10px; }
-  .book-cover { height: 160px; padding: 14px; }
-  .book-cover strong { font-size: 20px; }
-
-  .corporate h2 { font-size: 29px; }
-
-  .cta-box {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 28px;
-  }
-
-  .cta-box h2 { font-size: 25px; }
+@media(max-width:760px){
+ .section{padding:65px 0}
+ .nav{min-height:68px}
+ .menu-btn{display:block}
+ .nav-links{
+   display:none;position:absolute;top:68px;left:0;right:0;background:white;
+   padding:22px 5%;box-shadow:0 15px 25px rgba(0,0,0,.06);
+   flex-direction:column;align-items:stretch;gap:18px
+ }
+ .nav-links.active{display:flex}
+ .nav-links a{padding:4px}
+ .nav-cta{display:none}
+ .hero{padding:55px 0}
+ .hero-grid{grid-template-columns:1fr;gap:35px}
+ .hero h1{font-size:42px}
+ .hero-visual{min-height:350px}
+ .hero-image{inset:0 0 0 10px}
+ .hero-floating{right:0}
+ .trust-grid{gap:15px 25px}
+ .trust-item{font-size:11px}
+ .about-grid,.counsel-grid,.learning-grid,.corporate{grid-template-columns:1fr}
+ .about-grid{gap:35px}
+ .about-art{min-height:300px}
+ .about-art img{height:260px}
+ .about-copy h2{font-size:32px}
+ .service-grid{grid-template-columns:1fr 1fr}
+ .test-grid{grid-template-columns:1fr}
+ .test-cover{height:210px}
+ .counsel-img{height:300px}
+ .learning-feature{min-height:300px}
+ .learning-small{padding:14px}
+ .learning-small img{width:90px;height:95px}
+ .corporate{padding:27px}
+ .corporate h2{font-size:30px}
+ .corporate-list{gap:10px}
+ .article-grid{grid-template-columns:1fr}
+ .article-card img{height:220px}
+ .cta-box{padding:37px 23px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:30px}
+ .footer-about{grid-column:1/-1}
+}
+@media(max-width:430px){
+ .hero h1{font-size:36px}
+ .hero-copy{font-size:15px}
+ .hero-buttons .btn{width:100%}
+ .service-grid{grid-template-columns:1fr}
+ .about-points{grid-template-columns:1fr}
+ .corporate-list{grid-template-columns:1fr}
+ .footer-grid{grid-template-columns:1fr}
+ .footer-about{grid-column:auto}
+ .wa-float{width:55px;height:55px;right:16px;bottom:16px}
+ .wa-tooltip{display:none}
 }
 </style>
 </head>
@@ -694,476 +365,457 @@ footer {
 <body>
 
 <header>
-<div class="container nav">
-  <a class="logo" href="#">
-    AKSELERASI<span>.</span>
-  </a>
+  <div class="container nav">
+    <a href="#home" class="brand">
+      <!-- LOGO SEMENTARA: ganti bagian ini dengan logo PNG/SVG milik Anda -->
+      <div class="logo">AC</div>
+      <div class="brand-text">
+        <strong>AKSELERASI</strong>
+        <small>CONSULTING</small>
+      </div>
+    </a>
 
-  <nav class="nav-menu" id="navMenu">
-    <a href="#psikotes">Psikotes</a>
-    <a href="#konseling">Konseling</a>
-    <a href="#learning">Learning</a>
-    <a href="#ebook">E-Book</a>
-    <a href="#corporate">Corporate</a>
-  </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Buka menu">☰</button>
 
-  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-  <a class="btn btn-green" href="#layanan">Mulai Sekarang</a>
-</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#services">Layanan</a>
+      <a href="#assessment">Psikotes</a>
+      <a href="#learning">Learning</a>
+      <a href="#insight">Insight</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary nav-cta">Konsultasi ↗</a>
+  </div>
 </header>
 
 <!-- HERO -->
-
-<section class="hero">
-<div class="container hero-grid">
-
-  <div>
-    <span class="badge">✦ Psychology · Consulting · Development</span>
-
-    <h1>
-      Kenali Potensi.<br>
-      Kembangkan Kompetensi.<br>
-      <span>Akselerasi Masa Depan.</span>
-    </h1>
-
-    <p>
-      Temukan kekuatan diri, tingkatkan kualitas hidup,
-      dan kembangkan potensi melalui layanan psikologi,
-      assessment, konseling, dan pembelajaran.
-    </p>
-
-    <div class="hero-buttons">
-      <a class="btn btn-green" href="#psikotes">Jelajahi Layanan →</a>
-      <a class="btn btn-outline" href="#corporate">Untuk Perusahaan</a>
-    </div>
-  </div>
-
-  <div class="hero-visual">
-    <div class="hero-visual-inner">🌱</div>
-    <div class="floating-card float-one">
-      🧠 Kenali Potensi
-      <small>Mulai dari diri sendiri</small>
-    </div>
-    <div class="floating-card float-two">
-      ✨ Bertumbuh Bersama
-      <small>Accelerate your potential</small>
-    </div>
-  </div>
-
-</div>
-</section>
-
-<!-- LAYANAN -->
-
-<section id="layanan">
-<div class="container">
-
-  <div class="section-heading">
-    <small>OUR SERVICES</small>
-    <h2>Layanan untuk perjalanan pengembangan Anda</h2>
-    <p>
-      Pendekatan terintegrasi untuk membantu individu
-      maupun organisasi berkembang lebih optimal.
-    </p>
-  </div>
-
-  <div class="services">
-
-    <article class="service-card">
-      <div class="service-icon" style="background:#e2f1e6">🧠</div>
-      <h3>Psikotes Online</h3>
-      <p>
-        Kenali karakter, potensi, minat, kemampuan,
-        dan berbagai aspek diri melalui tes interaktif.
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Your Growth Partner</div>
+      <h1>Kenali Potensi.<br>Kembangkan <span>Kompetensi.</span><br>Akselerasi Masa Depan.</h1>
+      <p class="hero-copy">
+        Temukan potensi terbaik diri Anda dan bangun masa depan yang lebih terarah
+        melalui asesmen, konseling, pembelajaran, dan pengembangan kompetensi.
       </p>
-      <a href="#psikotes">Jelajahi Tes →</a>
-    </article>
-
-    <article class="service-card">
-      <div class="service-icon" style="background:#f0e8fa">💬</div>
-      <h3>Konseling</h3>
-      <p>
-        Ruang konsultasi bersama profesional untuk
-        membantu memahami diri dan menghadapi tantangan.
-      </p>
-      <a href="#konseling">Cari Konselor →</a>
-    </article>
-
-    <article class="service-card">
-      <div class="service-icon" style="background:#fff0df">🎥</div>
-      <h3>Learning & Webinar</h3>
-      <p>
-        Materi, kelas, webinar, dan video pembelajaran
-        untuk meningkatkan wawasan serta kompetensi.
-      </p>
-      <a href="#learning">Lihat Kelas →</a>
-    </article>
-
-    <article class="service-card">
-      <div class="service-icon" style="background:#e6edfa">📚</div>
-      <h3>E-Book</h3>
-      <p>
-        Materi digital dan panduan praktis untuk
-        menemani proses belajar dan pengembangan diri.
-      </p>
-      <a href="#ebook">Jelajahi Buku →</a>
-    </article>
-
-  </div>
-</div>
-</section>
-
-<!-- PSIKOTES -->
-
-<section class="tests" id="psikotes">
-<div class="container">
-
-  <div class="section-heading">
-    <small>ONLINE ASSESSMENT</small>
-    <h2>Kenali diri Anda lebih dalam</h2>
-    <p>
-      Mulai dengan tes sederhana atau pilih assessment
-      yang lebih mendalam sesuai kebutuhan.
-    </p>
-  </div>
-
-  <div class="test-grid">
-
-    <article class="test-card">
-      <div class="test-cover" style="background:#e2f1e6">🧩</div>
-      <div class="test-content">
-        <h3>Tes Kepribadian</h3>
-        <p>Memahami karakter, pola perilaku, dan kecenderungan diri.</p>
-        <span class="test-tag">TES GRATIS</span>
+      <div class="hero-buttons">
+        <a href="#assessment" class="btn btn-primary">Mulai Kenali Diri →</a>
+        <a href="#contact" class="btn btn-outline">Konsultasi Sekarang</a>
       </div>
-    </article>
-
-    <article class="test-card">
-      <div class="test-cover" style="background:#fff0df">💡</div>
-      <div class="test-content">
-        <h3>Minat & Bakat</h3>
-        <p>Eksplorasi potensi dan arah pengembangan karier.</p>
-        <span class="test-tag">TES GRATIS</span>
+      <div class="hero-note">
+        <span class="dots">● ● ●</span>
+        <span>Personal growth · Career · Organization</span>
       </div>
-    </article>
+    </div>
 
-    <article class="test-card">
-      <div class="test-cover" style="background:#e9e7fa">📊</div>
-      <div class="test-content">
-        <h3>Assessment Premium</h3>
-        <p>Pengukuran terstruktur dengan laporan hasil assessment.</p>
-        <span class="test-tag" style="background:#fff1d5;color:#9b711a">PREMIUM</span>
+    <div class="hero-visual">
+      <div class="hero-image"></div>
+      <div class="hero-floating">
+        <strong>Growth begins with awareness.</strong>
+        Mulai langkah terbaik Anda.
       </div>
-    </article>
-
-  </div>
-</div>
-</section>
-
-<!-- KONSELING -->
-
-<section id="konseling">
-<div class="container counsel-grid">
-
-  <div class="counsel-box">
-    <h3>Anda tidak harus menghadapi semuanya sendirian.</h3>
-    <p>
-      Temukan ruang aman untuk bercerita, memahami diri,
-      dan mencari solusi bersama profesional.
-    </p>
-
-    <div class="counsel-steps">
-      <div class="counsel-step">
-        <div class="step-icon">👩‍⚕️</div>
+      <div class="hero-badge">
+        <div class="badge-icon">✦</div>
         <div>
-          <strong>Pilih Psikolog / Konselor</strong>
-          <small>Temukan pendamping sesuai kebutuhan</small>
-        </div>
-      </div>
-
-      <div class="counsel-step">
-        <div class="step-icon">📅</div>
-        <div>
-          <strong>Pilih Jadwal</strong>
-          <small>Tentukan waktu konsultasi</small>
-        </div>
-      </div>
-
-      <div class="counsel-step">
-        <div class="step-icon">💻</div>
-        <div>
-          <strong>Konsultasi Online</strong>
-          <small>Video call atau metode yang tersedia</small>
+          <strong>Unlock Your Potential</strong>
+          <small>Discover · Develop · Accelerate</small>
         </div>
       </div>
     </div>
   </div>
-
-  <div>
-    <div class="section-heading">
-      <small>PROFESSIONAL SUPPORT</small>
-      <h2>Temukan dukungan yang tepat untuk Anda</h2>
-      <p>
-        Konsultasi personal untuk membantu memahami
-        tantangan, mengembangkan diri, dan menemukan
-        langkah yang lebih baik.
-      </p>
-    </div>
-
-    <a class="btn btn-green" href="#kontak">Booking Konseling →</a>
-  </div>
-
-</div>
 </section>
 
-<!-- VIDEO & LEARNING -->
-
-<section class="video-section" id="learning">
-<div class="container">
-
-  <div class="section-heading">
-    <small>LEARNING & DEVELOPMENT</small>
-    <h2>Belajar dan berkembang kapan saja</h2>
-    <p>
-      Webinar, video pembelajaran, dan kelas pilihan
-      yang dirancang untuk mendukung pengembangan diri.
-    </p>
-  </div>
-
-  <div class="video-grid">
-
-    <article class="video-card">
-      <div class="video-cover" style="background:#d9eddf;color:#286348">
-        <span>SELF DEVELOPMENT</span>
-        <strong>Mengenal<br>Diri Sendiri</strong>
-      </div>
-      <div class="video-content">
-        <h3>Self Awareness & Personal Growth</h3>
-        <p>Video pembelajaran · 5 materi</p>
-        <div class="video-bottom">
-          <span>Video Class</span>
-          <span>Rp 79.000</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="video-card">
-      <div class="video-cover" style="background:#f6dfc6;color:#875d39">
-        <span>WEBINAR</span>
-        <strong>Kelola Emosi<br>Lebih Baik</strong>
-      </div>
-      <div class="video-content">
-        <h3>Emotional Intelligence</h3>
-        <p>Webinar · Materi & rekaman</p>
-        <div class="video-bottom">
-          <span>Webinar</span>
-          <span>Rp 99.000</span>
-        </div>
-      </div>
-    </article>
-
-    <article class="video-card">
-      <div class="video-cover" style="background:#e6e5f9;color:#514a8a">
-        <span>CAREER DEVELOPMENT</span>
-        <strong>Potensi &<br>Karier</strong>
-      </div>
-      <div class="video-content">
-        <h3>Career Planning & Development</h3>
-        <p>Online class · 4 modul</p>
-        <div class="video-bottom">
-          <span>Premium Class</span>
-          <span>Rp 149.000</span>
-        </div>
-      </div>
-    </article>
-
+<!-- TRUST -->
+<div class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><span>✓</span> Pendekatan Profesional</div>
+    <div class="trust-item"><span>✓</span> Pengembangan Berbasis Potensi</div>
+    <div class="trust-item"><span>✓</span> Individu & Organisasi</div>
+    <div class="trust-item"><span>✓</span> Fleksibel & Online</div>
   </div>
 </div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container about-grid">
+    <div class="about-art">
+      <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=85"
+      alt="Tim profesional berkolaborasi mengembangkan potensi">
+      <div class="about-stat">
+        <strong>Grow with Purpose</strong>
+        <small>Perjalanan bertumbuh yang terarah</small>
+      </div>
+    </div>
+    <div class="about-copy">
+      <div class="eyebrow">About Akselerasi</div>
+      <h2>Setiap individu memiliki potensi untuk berkembang.</h2>
+      <p>
+        Akselerasi Consulting hadir untuk membantu individu menemukan kekuatan,
+        memahami diri, mengembangkan kompetensi, serta mengambil langkah yang
+        lebih tepat dalam perjalanan karier dan kehidupan.
+      </p>
+      <p>
+        Kami juga mendukung organisasi dalam membangun SDM yang kompeten,
+        produktif, dan siap menghadapi perubahan.
+      </p>
+      <div class="about-points">
+        <div class="about-point"><span>✓</span> Kenali kekuatan diri</div>
+        <div class="about-point"><span>✓</span> Kembangkan kompetensi</div>
+        <div class="about-point"><span>✓</span> Rencana pertumbuhan</div>
+        <div class="about-point"><span>✓</span> Solusi organisasi</div>
+      </div>
+      <a href="#services" class="btn btn-outline">Kenali Layanan Kami →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Our Services</div>
+      <h2>Solusi untuk Setiap Tahap Pertumbuhan</h2>
+      <p>Mulai dari memahami diri sendiri hingga mengembangkan potensi tim dan organisasi.</p>
+    </div>
+    <div class="service-grid">
+      <div class="service-card">
+        <div class="service-icon">◈</div>
+        <h3>Psikotes & Asesmen</h3>
+        <p>Kenali kepribadian, minat, potensi, kompetensi, serta kecenderungan diri.</p>
+        <a class="card-link" href="#assessment">Jelajahi tes →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">♡</div>
+        <h3>Konseling</h3>
+        <p>Ruang pendampingan untuk pengembangan diri, karier, dan menghadapi tantangan.</p>
+        <a class="card-link" href="#counseling">Lihat layanan →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">✦</div>
+        <h3>Learning & Development</h3>
+        <p>Program pembelajaran, webinar, kelas, dan pengembangan kompetensi.</p>
+        <a class="card-link" href="#learning">Mulai belajar →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">⌘</div>
+        <h3>Corporate Solutions</h3>
+        <p>Solusi asesmen, pelatihan, rekrutmen, dan pengembangan organisasi.</p>
+        <a class="card-link" href="#corporate">Untuk perusahaan →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSMENT -->
+<section class="section" id="assessment">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Discover Yourself</div>
+      <h2>Kenali Diri Anda Lebih Dalam</h2>
+      <p>Mulai dari rasa ingin tahu, temukan insight yang membantu Anda mengambil keputusan dan berkembang.</p>
+    </div>
+    <div class="test-grid">
+      <article class="test-card">
+        <div class="test-cover">
+          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=700&q=80" alt="Tes kepribadian">
+        </div>
+        <div class="test-body">
+          <span class="test-tag">PERSONALITY</span>
+          <h3>Tes Kepribadian</h3>
+          <p>Memahami kecenderungan karakter, cara berinteraksi, dan preferensi diri.</p>
+          <div class="test-meta"><span>⏱ 10–15 menit</span><span class="test-price">Segera hadir</span></div>
+        </div>
+      </article>
+
+      <article class="test-card">
+        <div class="test-cover">
+          <img src="https://images.unsplash.com/photo-1506784983877-45594orum?auto=format&fit=crop&w=700&q=80" alt="Tes minat karier">
+        </div>
+        <div class="test-body">
+          <span class="test-tag">CAREER</span>
+          <h3>Tes Minat & Bakat</h3>
+          <p>Eksplorasi minat, kekuatan, dan kemungkinan bidang pendidikan maupun karier.</p>
+          <div class="test-meta"><span>⏱ 15–20 menit</span><span class="test-price">Segera hadir</span></div>
+        </div>
+      </article>
+
+      <article class="test-card">
+        <div class="test-cover">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=80" alt="Asesmen potensi">
+        </div>
+        <div class="test-body">
+          <span class="test-tag">DEVELOPMENT</span>
+          <h3>Asesmen Potensi Diri</h3>
+          <p>Identifikasi potensi dan area pengembangan untuk membantu rencana pertumbuhan.</p>
+          <div class="test-meta"><span>⏱ Sesuai asesmen</span><span class="test-price">Segera hadir</span></div>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="#contact" class="btn btn-primary">Tanyakan Layanan Asesmen →</a>
+    </div>
+  </div>
+</section>
+
+<!-- COUNSELING -->
+<section class="section counseling" id="counseling">
+  <div class="container counsel-grid">
+    <div>
+      <div class="eyebrow">Counseling & Guidance</div>
+      <h2>Anda tidak harus menghadapi semuanya sendirian.</h2>
+      <p>
+        Temukan ruang aman untuk berbicara, memahami situasi, dan menyusun
+        langkah yang lebih baik bersama pendamping profesional yang sesuai.
+      </p>
+      <div class="counsel-list">
+        <div><span>✦</span> Konseling pengembangan diri</div>
+        <div><span>✦</span> Konseling karier dan pekerjaan</div>
+        <div><span>✦</span> Pendampingan pendidikan</div>
+        <div><span>✦</span> Konsultasi dan asesmen individu</div>
+      </div>
+      <a href="#contact" class="btn btn-orange">Booking Konsultasi ↗</a>
+    </div>
+    <div class="counsel-img">
+      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1000&q=85"
+      alt="Suasana konsultasi profesional">
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING -->
+<section class="section" id="learning">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Learn & Grow</div>
+      <h2>Belajar. Bertumbuh. Bergerak Lebih Maju.</h2>
+      <p>Pengetahuan dan keterampilan baru adalah investasi terbaik untuk masa depan.</p>
+    </div>
+    <div class="learning-grid">
+      <div class="learning-feature">
+        <span class="test-tag">ONLINE LEARNING</span>
+        <h3>Upgrade Diri Melalui Pembelajaran</h3>
+        <p>Program pembelajaran praktis untuk meningkatkan kemampuan personal dan profesional.</p>
+        <a href="#contact" class="btn btn-orange" style="width:max-content">Lihat Program →</a>
+      </div>
+      <div class="learning-side">
+        <div class="learning-small">
+          <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Video pembelajaran">
+          <div>
+            <h3>Video Learning</h3>
+            <p>Materi belajar fleksibel yang dapat diakses kapan saja.</p>
+            <a class="card-link" href="#contact">Selengkapnya →</a>
+          </div>
+        </div>
+        <div class="learning-small">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=500&q=80" alt="Webinar dan kelas">
+          <div>
+            <h3>Webinar & Workshop</h3>
+            <p>Belajar bersama praktisi dan komunitas yang inspiratif.</p>
+            <a class="card-link" href="#contact">Lihat jadwal →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- EBOOK -->
-
-<section id="ebook">
-<div class="container">
-
-  <div class="section-heading">
-    <small>DIGITAL LIBRARY</small>
-    <h2>Materi untuk terus bertumbuh</h2>
-    <p>
-      E-book dan panduan praktis untuk menemani
-      perjalanan pengembangan diri Anda.
-    </p>
+<section class="section ebook" id="ebook">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow">Digital Resources</div>
+      <h2>Insight untuk Perjalanan Anda</h2>
+      <p>Materi praktis yang dapat membantu proses refleksi, belajar, dan pengembangan diri.</p>
+    </div>
+    <div class="ebook-grid">
+      <div class="ebook-card">
+        <div class="book">KENALI<br>POTENSI<br>DIRI</div>
+        <div>
+          <h3>Workbook Mengenal Diri</h3>
+          <p>Panduan refleksi untuk menemukan kekuatan dan potensi.</p>
+          <a href="#contact">Informasi produk →</a>
+        </div>
+      </div>
+      <div class="ebook-card">
+        <div class="book orange">CAREER<br>JOURNEY</div>
+        <div>
+          <h3>Career Development Guide</h3>
+          <p>Persiapkan langkah karier dengan lebih terarah.</p>
+          <a href="#contact">Informasi produk →</a>
+        </div>
+      </div>
+      <div class="ebook-card">
+        <div class="book navy">GROWTH<br>MINDSET</div>
+        <div>
+          <h3>Personal Growth Journal</h3>
+          <p>Bangun kebiasaan refleksi dan perkembangan diri.</p>
+          <a href="#contact">Informasi produk →</a>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="ebook-grid">
-
-    <article class="ebook-card">
-      <div class="book-cover" style="background:#34785f">
-        <small>AKSELERASI CONSULTING</small>
-        <strong>Kenali<br>Dirimu</strong>
-      </div>
-      <h3>Workbook Eksplorasi Diri</h3>
-      <p>Latihan dan refleksi mengenali diri.</p>
-      <div class="book-price">Rp 49.000</div>
-    </article>
-
-    <article class="ebook-card">
-      <div class="book-cover" style="background:#bd7955">
-        <small>AKSELERASI CONSULTING</small>
-        <strong>Emosi &<br>Ketenangan</strong>
-      </div>
-      <h3>Memahami Emosi</h3>
-      <p>Belajar memahami dan mengelola emosi.</p>
-      <div class="book-price">Rp 39.000</div>
-    </article>
-
-    <article class="ebook-card">
-      <div class="book-cover" style="background:#5866a9">
-        <small>AKSELERASI CONSULTING</small>
-        <strong>Karier &<br>Potensi</strong>
-      </div>
-      <h3>Menemukan Potensi Karier</h3>
-      <p>Panduan eksplorasi karier dan kompetensi.</p>
-      <div class="book-price">Rp 59.000</div>
-    </article>
-
-    <article class="ebook-card">
-      <div class="book-cover" style="background:#788a55">
-        <small>AKSELERASI CONSULTING</small>
-        <strong>Growth<br>Mindset</strong>
-      </div>
-      <h3>Mindset Bertumbuh</h3>
-      <p>Membangun kebiasaan belajar berkelanjutan.</p>
-      <div class="book-price">Rp 45.000</div>
-    </article>
-
-  </div>
-</div>
 </section>
 
 <!-- CORPORATE -->
-
-<section class="corporate" id="corporate">
-<div class="container corporate-grid">
-
-  <div>
-    <small style="color:#a9d5bd;font-weight:bold">CORPORATE SOLUTIONS</small>
-    <h2>Solusi pengembangan SDM untuk organisasi</h2>
-    <p>
-      Mendukung organisasi dalam proses pengembangan
-      talent, assessment, rekrutmen, dan peningkatan
-      kompetensi karyawan.
-    </p>
-
-    <div class="corporate-list">
-      <div>✓ Recruitment & Selection Assessment</div>
-      <div>✓ Employee Potential Assessment</div>
-      <div>✓ Training & Development</div>
-      <div>✓ Corporate Consulting</div>
+<section class="section" id="corporate">
+  <div class="container">
+    <div class="corporate">
+      <div>
+        <div class="eyebrow">For Business & Organization</div>
+        <h2>SDM Berkualitas. Organisasi Bertumbuh.</h2>
+        <p>
+          Bantu organisasi menemukan, mengembangkan, dan mengoptimalkan
+          potensi sumber daya manusia melalui pendekatan yang terarah.
+        </p>
+        <a href="#contact" class="btn btn-primary">Diskusikan Kebutuhan Anda →</a>
+      </div>
+      <div class="corporate-list">
+        <div><span>01</span> Recruitment & Selection</div>
+        <div><span>02</span> Psychological Assessment</div>
+        <div><span>03</span> Training & Development</div>
+        <div><span>04</span> Leadership Development</div>
+        <div><span>05</span> Employee Assessment</div>
+        <div><span>06</span> Organizational Development</div>
+      </div>
     </div>
-
-    <a class="btn btn-green" href="#kontak">Konsultasi Perusahaan →</a>
   </div>
-
-  <div style="background:#ffffff12;border-radius:22px;padding:35px;text-align:center">
-    <div style="font-size:75px">🏢</div>
-    <h3 style="font-size:24px;margin:10px">People. Potential. Performance.</h3>
-    <p style="color:#c4d3df">
-      Membantu perusahaan mengembangkan potensi
-      manusia dan organisasi.
-    </p>
-  </div>
-
-</div>
 </section>
 
-<!-- ARTICLES -->
-
-<section>
-<div class="container">
-
-  <div class="section-heading">
-    <small>INSIGHT & ARTICLES</small>
-    <h2>Insight untuk kehidupan dan karier</h2>
-    <p>Artikel seputar psikologi, pengembangan diri, dan dunia kerja.</p>
+<!-- INSIGHT -->
+<section class="section" id="insight">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Articles & Insight</div>
+      <h2>Insight untuk Mengembangkan Potensi</h2>
+      <p>Ide, perspektif, dan informasi untuk membantu Anda terus bertumbuh.</p>
+    </div>
+    <div class="article-grid">
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-149975석?auto=format&fit=crop&w=700&q=80" alt="Pengembangan diri">
+        <div class="article-body">
+          <small>PERSONAL DEVELOPMENT</small>
+          <h3>Bagaimana Mengenali Potensi Diri?</h3>
+          <p>Memulai proses pengembangan diri dengan memahami kekuatan, minat, dan nilai personal.</p>
+          <a class="card-link" href="#contact">Baca insight →</a>
+        </div>
+      </article>
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=700&q=85" alt="Karier dan pekerjaan">
+        <div class="article-body">
+          <small>CAREER</small>
+          <h3>Menentukan Arah Karier yang Tepat</h3>
+          <p>Hal-hal yang perlu dipertimbangkan dalam merancang perjalanan karier.</p>
+          <a class="card-link" href="#contact">Baca insight →</a>
+        </div>
+      </article>
+      <article class="article-card">
+        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=85" alt="Pengembangan tim">
+        <div class="article-body">
+          <small>WORK & ORGANIZATION</small>
+          <h3>Membangun Tim yang Berkembang</h3>
+          <p>Mengembangkan budaya belajar dan kompetensi di dalam organisasi.</p>
+          <a class="card-link" href="#contact">Baca insight →</a>
+        </div>
+      </article>
+    </div>
   </div>
-
-  <div class="article-grid">
-
-    <article class="article-card">
-      <div class="article-cover" style="background:#e3f0e6">🌱</div>
-      <div class="article-content">
-        <small>PERSONAL DEVELOPMENT</small>
-        <h3>Mulai mengenal diri dan memahami potensi</h3>
-        <p>Refleksi sederhana untuk mengenali kekuatan dan hal yang penting bagi diri.</p>
-      </div>
-    </article>
-
-    <article class="article-card">
-      <div class="article-cover" style="background:#fff0df">🧠</div>
-      <div class="article-content">
-        <small>PSYCHOLOGY</small>
-        <h3>Mengapa memahami emosi itu penting?</h3>
-        <p>Mengenali emosi sebagai bagian dari proses memahami diri.</p>
-      </div>
-    </article>
-
-    <article class="article-card">
-      <div class="article-cover" style="background:#e9e7fa">🚀</div>
-      <div class="article-content">
-        <small>CAREER</small>
-        <h3>Mengembangkan kompetensi di dunia kerja</h3>
-        <p>Belajar mengembangkan keterampilan dan potensi profesional.</p>
-      </div>
-    </article>
-
-  </div>
-</div>
 </section>
 
 <!-- CTA -->
-
-<section id="kontak">
-<div class="container">
-  <div class="cta-box">
-    <div>
-      <h2>Siap mengakselerasi potensi Anda?</h2>
-      <p>Mulai perjalanan pengembangan diri bersama Akselerasi Consulting.</p>
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta-box">
+      <h2>Siap Memulai Perjalanan Anda?</h2>
+      <p>
+        Langkah pertama dalam perubahan adalah mengenali diri dan menentukan
+        arah. Kami siap membantu Anda memulai.
+      </p>
+      <a class="btn btn-orange" href="https://wa.me/62818950312?text=Halo%20Akselerasi%20Consulting%2C%20saya%20ingin%20konsultasi%20mengenai%20layanan%20Anda." target="_blank" rel="noopener">
+        Hubungi Kami via WhatsApp ↗
+      </a>
     </div>
-    <a class="btn" href="mailto:info@akselerasiconsulting.com">
-      Hubungi Kami →
-    </a>
   </div>
-</div>
 </section>
 
+<!-- FOOTER -->
 <footer>
-<div class="container footer-grid">
-  <div>
-    <strong style="color:#205640">AKSELERASI CONSULTING</strong><br>
-    Accelerate Your Potential.
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="#home" class="brand" style="color:white">
+          <div class="logo" style="background:#e99b61;color:#173f35">AC</div>
+          <div class="brand-text">
+            <strong>AKSELERASI</strong>
+            <small style="color:#b9ccc3">CONSULTING</small>
+          </div>
+        </a>
+        <p>
+          Partner Anda dalam mengenali potensi, mengembangkan kompetensi,
+          dan mengakselerasi pertumbuhan individu maupun organisasi.
+        </p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <div class="footer-links">
+          <a href="#about">Tentang Kami</a>
+          <a href="#services">Layanan</a>
+          <a href="#assessment">Psikotes</a>
+          <a href="#learning">Learning</a>
+        </div>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <div class="footer-links">
+          <a href="#counseling">Konseling</a>
+          <a href="#assessment">Asesmen</a>
+          <a href="#corporate">Corporate</a>
+          <a href="#ebook">Produk Digital</a>
+        </div>
+      </div>
+      <div>
+        <h4>Hubungi Kami</h4>
+        <div class="footer-links">
+          <a href="https://wa.me/62818950312" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="#contact">Konsultasi</a>
+          <a href="#insight">Artikel & Insight</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Akselerasi Consulting. All rights reserved.</span>
+      <span>Accelerate Your Potential.</span>
+    </div>
   </div>
-  <div>
-    © <span id="year"></span> Akselerasi Consulting.
-    All Rights Reserved.
-  </div>
-</div>
 </footer>
 
-<script>
-function toggleMenu() {
-  document.getElementById('navMenu').classList.toggle('open');
-}
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/62818950312?text=Halo%20Akselerasi%20Consulting%2C%20saya%20ingin%20mengetahui%20informasi%20layanan%20Anda."
+target="_blank" rel="noopener" aria-label="Chat WhatsApp Akselerasi Consulting">
+  <span class="wa-tooltip">Konsultasi via WhatsApp</span>
+  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+    <path d="M16 3C8.83 3 3 8.75 3 15.83c0 2.45.7 4.83 2.04 6.88L3 29l6.52-1.98A13.1 13.1 0 0 0 16 28.67c7.17 0 13-5.75 13-12.84C29 8.75 23.17 3 16 3zm0 23.3c-2.12 0-4.2-.58-5.98-1.68l-.43-.27-3.87 1.18 1.26-3.75-.28-.44a10.7 10.7 0 0 1-1.65-5.52C5.05 9.98 9.97 5.1 16 5.1s10.95 4.88 10.95 10.72c0 5.85-4.92 10.48-10.95 10.48zm6.02-8.04c-.33-.16-1.94-.95-2.24-1.06-.3-.1-.52-.16-.74.16-.49.33-1.13.74-1.36.9-.24.16-.48.18-.8-.08-.33-.26-1.4-.51-2.67-1.6-.93-.8-1.56-1.8-1.75-2.1-.18-.3-.02-.47.13-.62.14-.16.3-.37.45-.56.15-.2.2-.36.3-.6.1-.24-.04-.44-.1-.6-.16-.17-.1-.8-.38-1.4-.76-.44-.28-.74-.64-1.04-1.08-.3-.42-.04-.64.19-.85.2-.2.42-.47.48-.63.06-.15.08-.32-.03-.48-.1-.16-.75-1.8-1.02-2.46-.27-.65-.54-.56-.74-.57-.95-.57-.2 0-.58.08-.88.4-.3.32-1.16 1.13-1.16 2.75s1.2 3.19 1.36 3.4c.16.22 2.35 3.55 5.7 4.98.8.34 1.42.54 1.9.7.8.26 1.52.22 2.1.14.64-.1 1.94-.8 2.22-1.58.28-.78.28-1.44.2-1.58-.08-.14-.3-.22-.63-.38z"/>
+  </svg>
+</a>
 
-document.querySelectorAll('#navMenu a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('navMenu').classList.remove('open');
+<script>
+const menuBtn=document.getElementById('menuBtn');
+const navLinks=document.getElementById('navLinks');
+
+menuBtn.addEventListener('click',()=>{
+  navLinks.classList.toggle('active');
+  menuBtn.textContent=navLinks.classList.contains('active')?'✕':'☰';
+});
+
+navLinks.querySelectorAll('a').forEach(link=>{
+  link.addEventListener('click',()=>{
+    navLinks.classList.remove('active');
+    menuBtn.textContent='☰';
   });
 });
 
-document.getElementById('year').textContent =
-  new Date().getFullYear();
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
-
 </body>
 </html>
