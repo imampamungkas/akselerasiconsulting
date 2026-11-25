@@ -1,0 +1,743 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Video Learning | Akselerasi Consulting</title>
+<meta name="description" content="Video edukasi, pengembangan diri, psikologi, karier, dan potensi diri bersama Akselerasi Consulting.">
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #557963;
+    --green-dark: #365843;
+    --cream: #f6f8f4;
+    --text: #25372b;
+    --muted: #718077;
+    --border: #e5ebe5;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--green-dark);
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #8a978d;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 13px;
+}
+
+.nav a:hover {
+    color: var(--green);
+}
+
+.nav .contact-btn {
+    background: var(--green);
+    color: white;
+    padding: 11px 20px;
+    border-radius: 30px;
+}
+
+/* HERO */
+
+.hero {
+    background: linear-gradient(135deg, #f3f7f2, #e7efe7);
+    padding: 75px 5%;
+}
+
+.hero-container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.label {
+    color: var(--green);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: var(--green);
+}
+
+.hero p {
+    color: var(--muted);
+    max-width: 650px;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 23px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.btn-green {
+    background: var(--green);
+    color: white;
+}
+
+.btn-outline {
+    border: 1px solid #c6d2c8;
+    background: white;
+    color: var(--green-dark);
+}
+
+/* VIDEO CONTENT */
+
+.video-section {
+    padding: 65px 5% 85px;
+}
+
+.video-container {
+    max-width: 1160px;
+    margin: auto;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* FILTER */
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    border: 1px solid var(--border);
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: #69776d;
+    transition: .2s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--green);
+    color: white;
+    border-color: var(--green);
+}
+
+/* GRID */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.video-card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    overflow: hidden;
+    background: white;
+    transition: .3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(40,70,48,.09);
+}
+
+/* THUMBNAIL */
+
+.thumbnail {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+}
+
+.thumb1 {
+    background: linear-gradient(135deg,#71977c,#294b36);
+}
+
+.thumb2 {
+    background: linear-gradient(135deg,#c29b61,#604a30);
+}
+
+.thumb3 {
+    background: linear-gradient(135deg,#788bad,#33415e);
+}
+
+.thumb4 {
+    background: linear-gradient(135deg,#94a88a,#405843);
+}
+
+.thumb5 {
+    background: linear-gradient(135deg,#ad8796,#614657);
+}
+
+.thumb6 {
+    background: linear-gradient(135deg,#82a3ad,#39545f);
+}
+
+.play {
+    width: 58px;
+    height: 58px;
+    background: white;
+    color: var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    padding-left: 4px;
+}
+
+.badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background: white;
+    color: var(--green);
+}
+
+.badge.premium {
+    background: #f1d08a;
+    color: #61491e;
+}
+
+.duration {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #000000a8;
+    color: white;
+    padding: 5px 9px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+/* VIDEO TEXT */
+
+.card-content {
+    padding: 22px;
+}
+
+.category {
+    font-size: 10px;
+    color: var(--green);
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.card-content h3 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    margin: 9px 0;
+}
+
+.card-content p {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    border-top: 1px solid var(--border);
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.video-link {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.video-link:hover {
+    color: var(--green-dark);
+}
+
+.price {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+}
+
+.premium-price {
+    color: #987331;
+}
+
+/* FOOTER */
+
+footer {
+    background: #243b2d;
+    color: #dce7de;
+    padding: 30px 5%;
+}
+
+.footer-container {
+    max-width: 1160px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 12px;
+}
+
+footer a {
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+
+    .nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 55px 5%;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .video-section {
+        padding: 45px 5% 60px;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            AKSELERASI
+            <small>CONSULTING</small>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Beranda</a>
+            <a href="services.html">Layanan</a>
+            <a href="psychotest.html">Psikotes</a>
+            <a href="videos.html">Video</a>
+            <a href="bookstore.html">Book Store</a>
+            <a href="contact.html" class="contact-btn">Konsultasi</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-container">
+
+        <span class="label">VIDEO LEARNING</span>
+
+        <h1>
+            Belajar & Bertumbuh<br>
+            <span>Melalui Video</span>
+        </h1>
+
+        <p>
+            Temukan berbagai video edukasi seputar pengembangan diri,
+            psikologi, karier, dan potensi diri.
+            Mulai perjalanan Anda untuk mengenali diri dan berkembang.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#koleksi" class="btn btn-green">
+                Jelajahi Video
+            </a>
+
+            <a href="https://wa.me/62818950312"
+               class="btn btn-outline">
+                Hubungi Kami
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section" id="koleksi">
+
+    <div class="video-container">
+
+        <div class="section-heading">
+            <h2>Koleksi Video</h2>
+            <p>Pilih video yang ingin Anda pelajari.</p>
+        </div>
+
+        <!-- FILTER -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                Semua Video
+            </button>
+
+            <button class="filter-btn" data-filter="free">
+                Video Gratis
+            </button>
+
+            <button class="filter-btn" data-filter="premium">
+                Video Premium
+            </button>
+
+        </div>
+
+        <!-- VIDEO GRID -->
+        <div class="video-grid">
+
+            <!-- VIDEO GRATIS 1 -->
+            <div class="video-card" data-type="free">
+
+                <a href="#" class="thumbnail thumb1">
+                    <span class="badge">GRATIS</span>
+                    <span class="play">▶</span>
+                    <span class="duration">12 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Pengembangan Diri</span>
+
+                    <h3>Mengenali Potensi Diri</h3>
+
+                    <p>
+                        Kenali kekuatan, minat, dan potensi diri
+                        sebagai langkah awal pengembangan diri.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price">Gratis</span>
+                        <a href="#" class="video-link">Tonton Video →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO GRATIS 2 -->
+            <div class="video-card" data-type="free">
+
+                <a href="#" class="thumbnail thumb2">
+                    <span class="badge">GRATIS</span>
+                    <span class="play">▶</span>
+                    <span class="duration">18 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Karier</span>
+
+                    <h3>Menentukan Arah Karier</h3>
+
+                    <p>
+                        Memahami minat dan pertimbangan dalam
+                        menentukan pilihan karier.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price">Gratis</span>
+                        <a href="#" class="video-link">Tonton Video →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO GRATIS 3 -->
+            <div class="video-card" data-type="free">
+
+                <a href="#" class="thumbnail thumb3">
+                    <span class="badge">GRATIS</span>
+                    <span class="play">▶</span>
+                    <span class="duration">15 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Psikologi</span>
+
+                    <h3>Membangun Kepercayaan Diri</h3>
+
+                    <p>
+                        Memahami rasa percaya diri dan cara
+                        mengembangkannya dalam kehidupan.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price">Gratis</span>
+                        <a href="#" class="video-link">Tonton Video →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO PREMIUM 1 -->
+            <div class="video-card" data-type="premium">
+
+                <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20informasi%20video%20premium."
+                   class="thumbnail thumb4">
+
+                    <span class="badge premium">PREMIUM</span>
+                    <span class="play">▶</span>
+                    <span class="duration">45 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Kepribadian</span>
+
+                    <h3>Memahami Kepribadian Secara Mendalam</h3>
+
+                    <p>
+                        Pembelajaran lebih mendalam tentang karakter,
+                        kepribadian, dan pola perilaku.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price premium-price">Premium</span>
+                        <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20akses%20video%20premium."
+                           class="video-link">Info Akses →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO PREMIUM 2 -->
+            <div class="video-card" data-type="premium">
+
+                <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20informasi%20video%20premium."
+                   class="thumbnail thumb5">
+
+                    <span class="badge premium">PREMIUM</span>
+                    <span class="play">▶</span>
+                    <span class="duration">60 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Pengembangan Karier</span>
+
+                    <h3>Strategi Pengembangan Karier</h3>
+
+                    <p>
+                        Panduan mengembangkan karier dan menyusun
+                        langkah menuju tujuan profesional.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price premium-price">Premium</span>
+                        <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20akses%20video%20premium."
+                           class="video-link">Info Akses →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- VIDEO PREMIUM 3 -->
+            <div class="video-card" data-type="premium">
+
+                <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20informasi%20video%20premium."
+                   class="thumbnail thumb6">
+
+                    <span class="badge premium">PREMIUM</span>
+                    <span class="play">▶</span>
+                    <span class="duration">50 Menit</span>
+                </a>
+
+                <div class="card-content">
+
+                    <span class="category">Personal Growth</span>
+
+                    <h3>Program Pengembangan Diri</h3>
+
+                    <p>
+                        Materi dan latihan praktis untuk mendukung
+                        pertumbuhan pribadi secara berkelanjutan.
+                    </p>
+
+                    <div class="card-footer">
+                        <span class="price premium-price">Premium</span>
+                        <a href="https://wa.me/62818950312?text=Halo%2C%20saya%20ingin%20akses%20video%20premium."
+                           class="video-link">Info Akses →</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <span>© 2026 Akselerasi Consulting</span>
+        <span>Belajar • Bertumbuh • Mengembangkan Potensi</span>
+        <a href="https://wa.me/62818950312">Hubungi Kami</a>
+    </div>
+</footer>
+
+<!-- FILTER SCRIPT -->
+<script>
+const filterButtons = document.querySelectorAll('.filter-btn');
+const videoCards = document.querySelectorAll('.video-card');
+
+filterButtons.forEach(button => {
+
+    button.addEventListener('click', function() {
+
+        filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+
+        videoCards.forEach(card => {
+
+            if (filter === 'all') {
+                card.style.display = 'block';
+            }
+            else if (card.dataset.type === filter) {
+                card.style.display = 'block';
+            }
+            else {
+                card.style.display = 'none';
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+</body>
+</html>
