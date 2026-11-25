@@ -1411,3 +1411,238 @@ select:focus-visible {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* ==========================================
+   FIX FINAL - SERVICES SECTION
+   Sesuai HTML index.html
+========================================== */
+
+.services-section {
+    padding: 90px 0;
+    background: #f8f7f2;
+    overflow: hidden;
+}
+
+.services-container {
+    width: min(1160px, 90%);
+    margin: 0 auto;
+}
+
+/* HEADING */
+.services-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.services-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #24574b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.services-heading h2 {
+    margin-bottom: 18px;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.25;
+    color: #183d36;
+}
+
+.services-heading h2 span {
+    color: #69917d;
+}
+
+.services-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #727d77;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* CARD */
+.service-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 350px;
+
+    padding: 30px 25px;
+    background: #ffffff;
+
+    border: 1px solid #e3e7e2;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 25px rgba(24, 61, 54, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-6px);
+    border-color: #b5cdbb;
+    box-shadow: 0 18px 35px rgba(24, 61, 54, 0.10);
+}
+
+/* ICON */
+.service-box .service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+
+    margin: 0 0 24px;
+
+    border-radius: 17px;
+    background: #dce9e2;
+
+    font-size: 27px;
+    line-height: 1;
+}
+
+/* NUMBER */
+.service-box .service-number {
+    position: absolute;
+    top: 32px;
+    right: 25px;
+
+    margin: 0;
+    color: #a2b3a8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+/* TITLE */
+.service-box h3 {
+    margin: 0 0 14px;
+
+    color: #183d36;
+    font-family: "Manrope", sans-serif;
+
+    font-size: 19px;
+    font-weight: 750;
+    line-height: 1.4;
+}
+
+/* DESCRIPTION */
+.service-box p {
+    margin: 0 0 25px;
+
+    color: #727d77;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* LINK */
+.service-box .service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+    margin-top: auto;
+    padding-top: 15px;
+
+    color: #24574b;
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+.service-box .service-link span {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.service-box .service-link:hover span {
+    transform: translateX(5px);
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .service-box {
+        min-height: 320px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .services-section {
+        padding: 65px 0;
+    }
+
+    .services-container {
+        width: 90%;
+    }
+
+    .services-heading {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .services-heading h2 {
+        font-size: 30px;
+    }
+
+    .services-heading p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .service-box {
+        min-height: auto;
+        padding: 25px;
+        border-radius: 17px;
+    }
+
+    .service-box .service-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .service-box h3 {
+        font-size: 18px;
+    }
+
+    .service-box p {
+        font-size: 14px;
+    }
+
+    .service-box .service-link {
+        margin-top: 10px;
+    }
+}
+
