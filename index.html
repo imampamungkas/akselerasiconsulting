@@ -1,93 +1,1169 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>akselerasiconsulting — Psikologi & Pembelajaran Digital</title>
-<meta name="description" content="Platform psikotes online, konseling profesional, video pembelajaran premium, dan e-book edukasi.">
+<title>Akselerasi Consulting | Accelerate Your Potential</title>
+<meta name="description" content="Akselerasi Consulting menyediakan psikotes online, konseling, assessment, learning, webinar, dan pengembangan potensi diri.">
+
 <style>
-:root{--ink:#172b4d;--muted:#66758a;--primary:#4967d6;--teal:#209d98;--purple:#7866d8;--orange:#ef886e;--bg:#f5f8fc;--white:#fff;--line:#e7edf5;--shadow:0 18px 48px rgba(27,48,83,.09)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}a{text-decoration:none;color:inherit}.container{width:min(1160px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(230,237,246,.8)}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:15px 0}.brand{display:flex;gap:10px;align-items:center;font-weight:800;font-size:1.15rem}.logo{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,#526fe3,#23aaa2);display:grid;place-items:center;color:white;font-size:21px}.navlinks{display:flex;gap:26px;color:#596a80;font-size:.92rem}.navlinks a:hover{color:var(--primary)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;font-weight:700;border:1px solid transparent;transition:.2s;cursor:pointer}.btn-primary{color:white;background:var(--primary);box-shadow:0 8px 20px rgba(73,103,214,.23)}.btn-primary:hover{transform:translateY(-2px);background:#3e59c3}.btn-outline{border-color:#dce4f0;background:white;color:var(--ink)}.menu-btn{display:none;background:white;border:1px solid var(--line);padding:8px 12px;border-radius:9px}
-.hero{padding:76px 0 60px;overflow:hidden;background:radial-gradient(circle at 80% 20%,#e6edff 0,transparent 34%),radial-gradient(circle at 5% 80%,#dcf7f3 0,transparent 30%)}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#e9efff;color:#4965ce;padding:7px 12px;border-radius:99px;font-weight:700;font-size:.82rem}.hero h1{font-size:clamp(2.35rem,5vw,4.1rem);line-height:1.1;letter-spacing:-.04em;margin:20px 0}.hero h1 span{color:var(--primary)}.hero p{font-size:1.08rem;color:var(--muted);max-width:540px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0}.trust{display:flex;align-items:center;gap:12px;color:#728096;font-size:.88rem}.avatars{display:flex}.avatars span{width:28px;height:28px;border:2px solid white;background:#d8e6f8;border-radius:50%;margin-left:-7px;display:grid;place-items:center;font-size:13px}.avatars span:first-child{margin:0}
-.visual{position:relative;min-height:430px;display:grid;place-items:center}.dash{width:100%;max-width:480px;background:white;border-radius:25px;padding:23px;box-shadow:var(--shadow);border:1px solid #edf1f7;transform:rotate(1deg)}.dash-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.dash-top strong{font-size:1.04rem}.tag{font-size:.78rem;padding:5px 9px;border-radius:8px;background:#eaf8f5;color:#228e85;font-weight:700}.progress-card{background:#f5f7ff;border-radius:17px;padding:18px;margin-bottom:14px}.progress-card h3{margin:0 0 5px;font-size:1rem}.progress-card p{margin:0;color:#748198;font-size:.83rem}.progress{height:8px;background:#dfe5f6;border-radius:10px;margin-top:15px;overflow:hidden}.progress i{display:block;width:68%;height:100%;background:linear-gradient(90deg,#536ee0,#26aaa2);border-radius:10px}.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mini{border:1px solid var(--line);border-radius:15px;padding:14px}.mini-icon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:20px;margin-bottom:9px}.mini strong{display:block;font-size:.92rem}.mini small{color:var(--muted)}.float{position:absolute;background:white;padding:13px 16px;border-radius:15px;box-shadow:var(--shadow);font-weight:700;font-size:.9rem}.float.f1{left:0;top:32px}.float.f2{right:0;bottom:36px}.float em{font-style:normal;color:var(--teal)}
-section{padding:72px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.section-head .eyebrow{margin-bottom:13px}.section-head h2{font-size:clamp(1.8rem,3vw,2.6rem);line-height:1.2;margin:8px 0 14px;letter-spacing:-.025em}.section-head p{color:var(--muted);margin:0}
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{background:white;border:1px solid var(--line);border-radius:20px;padding:23px;box-shadow:0 5px 22px rgba(25,45,75,.035);transition:.22s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.service .icon{height:52px;width:52px;border-radius:16px;display:grid;place-items:center;font-size:25px;margin-bottom:17px}.service h3{margin:0 0 8px;font-size:1.12rem}.service p{color:var(--muted);font-size:.9rem;margin:0 0 18px}.service ul{padding-left:18px;color:#586b81;font-size:.85rem;margin:0 0 19px}.service a{font-weight:700;color:var(--primary);font-size:.9rem}.s1 .icon{background:#e2f5f3}.s2 .icon{background:#e4efff}.s3 .icon{background:#eeebff}.s4 .icon{background:#fff0e9}
-.feature{background:white}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.feature-panel{background:linear-gradient(140deg,#506bd9,#29a6a0);border-radius:25px;padding:32px;color:white;min-height:330px;position:relative;overflow:hidden}.feature-panel:after{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.2);border-radius:50%;right:-75px;bottom:-85px}.feature-panel h3{font-size:1.5rem;margin:0 0 10px}.feature-panel p{opacity:.88;max-width:350px}.feature-stat{display:flex;gap:15px;margin-top:25px}.stat{background:rgba(255,255,255,.15);padding:14px 17px;border-radius:14px;backdrop-filter:blur(5px)}.stat strong{font-size:1.2rem;display:block}.stat small{opacity:.8}.feature-list{display:grid;gap:17px}.feature-item{display:flex;gap:15px}.check{flex:none;width:34px;height:34px;border-radius:11px;background:#e7f7f4;color:#219b91;display:grid;place-items:center;font-weight:900}.feature-item h4{margin:0 0 3px}.feature-item p{margin:0;color:var(--muted);font-size:.92rem}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{padding:25px;border-radius:18px;background:white;border:1px solid var(--line)}.step-no{width:40px;height:40px;background:#edf1ff;color:var(--primary);border-radius:13px;display:grid;place-items:center;font-weight:800}.step h3{margin:14px 0 7px}.step p{margin:0;color:var(--muted);font-size:.92rem}
-.cta{padding:55px 0}.cta-box{background:#1c3154;border-radius:25px;padding:42px;color:white;display:flex;justify-content:space-between;align-items:center;gap:25px;position:relative;overflow:hidden}.cta-box:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;background:#526bd5;opacity:.25;right:5%;top:-100px}.cta-box h2{margin:0 0 10px;font-size:2rem}.cta-box p{margin:0;color:#c5d1e4}.cta-box .btn{background:white;color:#304eaf;position:relative;z-index:1;white-space:nowrap}
-footer{padding:30px 0;border-top:1px solid var(--line);background:white;color:#758399;font-size:.88rem}.footer{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer strong{color:var(--ink)}
-@media(max-width:950px){.services{grid-template-columns:repeat(2,1fr)}.hero-grid{gap:24px}.visual{min-height:360px}.feature-grid{gap:28px}}
-@media(max-width:700px){.navlinks{display:none;position:absolute;top:70px;left:4%;right:4%;padding:18px;background:white;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);flex-direction:column;gap:14px}.navlinks.open{display:flex}.menu-btn{display:block}.nav .btn{display:none}.hero{padding:48px 0 35px}.hero-grid{grid-template-columns:1fr}.visual{min-height:360px}.float.f1{left:-5px}.float.f2{right:-4px}.services{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.cta-box{flex-direction:column;align-items:flex-start;padding:30px}.section-head{text-align:left;margin-left:0}.section-head h2{font-size:2rem}section{padding:52px 0}}
+:root {
+  --green: #31775f;
+  --green-dark: #205640;
+  --mint: #e7f2ec;
+  --navy: #24364b;
+  --cream: #fbfaf6;
+  --orange: #e7a36c;
+  --text: #334155;
+  --muted: #778394;
+  --white: #ffffff;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--navy);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+.container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+  background: rgba(255,255,255,.96);
+  border-bottom: 1px solid #edf0ed;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 76px;
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--green-dark);
+  letter-spacing: -.5px;
+}
+
+.logo span {
+  color: var(--orange);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-size: 14px;
+  color: #536173;
+}
+
+.nav-menu a:hover {
+  color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-green {
+  color: white;
+  background: var(--green);
+}
+
+.btn-green:hover {
+  background: var(--green-dark);
+}
+
+.btn-outline {
+  border: 1px solid #d5e2d9;
+  background: white;
+}
+
+.menu-toggle {
+  display: none;
+  padding: 9px 12px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+  background: var(--mint);
+  padding: 75px 0;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 13px;
+  background: #d5e9dc;
+  color: var(--green-dark);
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.12;
+  margin: 22px 0;
+  letter-spacing: -2px;
+}
+
+.hero h1 span {
+  color: var(--green);
+}
+
+.hero p {
+  color: #61766a;
+  font-size: 17px;
+  max-width: 560px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.hero-visual {
+  min-height: 370px;
+  background: #d3e6d8;
+  border-radius: 45% 55% 55% 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-visual-inner {
+  width: 75%;
+  height: 290px;
+  background: linear-gradient(140deg, #66977d, #2f6650);
+  border-radius: 140px 140px 25px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 85px;
+}
+
+.floating-card {
+  position: absolute;
+  background: white;
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 12px 30px #294d3815;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.float-one { top: 30px; left: 0; }
+.float-two { right: 0; bottom: 30px; }
+
+.floating-card small {
+  display: block;
+  color: var(--muted);
+  font-weight: normal;
+}
+
+/* SECTION */
+
+section {
+  padding: 75px 0;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 35px;
+}
+
+.section-heading small {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-heading h2 {
+  font-size: clamp(27px, 3vw, 38px);
+  line-height: 1.2;
+  margin: 10px 0;
+  letter-spacing: -.8px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+/* SERVICES */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.service-card {
+  background: white;
+  border: 1px solid #eceeea;
+  padding: 23px;
+  border-radius: 18px;
+  transition: .2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #233c2810;
+}
+
+.service-icon {
+  width: 53px;
+  height: 53px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+  margin-bottom: 18px;
+}
+
+.service-card h3 {
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+.service-card p {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+.service-card a {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/* PSIKOTES */
+
+.tests {
+  background: white;
+}
+
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.test-card {
+  border: 1px solid #e9eee9;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.test-cover {
+  height: 145px;
+  display: grid;
+  place-items: center;
+  font-size: 45px;
+}
+
+.test-content {
+  padding: 20px;
+}
+
+.test-content h3 {
+  margin-bottom: 8px;
+}
+
+.test-content p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.test-tag {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 20px;
+  background: #e5f4ea;
+  color: #327b56;
+  font-size: 11px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* COUNSELING */
+
+.counseling {
+  background: #f4efe8;
+}
+
+.counsel-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.counsel-box {
+  padding: 38px;
+  border-radius: 25px;
+  background: #e8ddf4;
+}
+
+.counsel-box h3 {
+  font-size: 27px;
+  margin-bottom: 12px;
+}
+
+.counsel-box p {
+  color: #706582;
+}
+
+.counsel-steps {
+  margin-top: 25px;
+  display: grid;
+  gap: 15px;
+}
+
+.counsel-step {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.step-icon {
+  width: 38px;
+  height: 38px;
+  background: white;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+}
+
+.counsel-step strong {
+  display: block;
+  font-size: 14px;
+}
+
+.counsel-step small {
+  color: var(--muted);
+}
+
+/* VIDEO */
+
+.video-section {
+  background: white;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.video-card {
+  border: 1px solid #e9eee9;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.video-cover {
+  height: 165px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video-cover span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.video-cover strong {
+  font-size: 23px;
+  line-height: 1.2;
+}
+
+.video-content {
+  padding: 18px;
+}
+
+.video-content h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.video-content p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.video-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* EBOOK */
+
+.ebook-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.ebook-card {
+  background: white;
+  padding: 14px;
+  border: 1px solid #e9eee9;
+  border-radius: 17px;
+}
+
+.book-cover {
+  height: 190px;
+  border-radius: 11px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-cover small {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.book-cover strong {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.ebook-card h3 {
+  font-size: 14px;
+  margin: 13px 0 6px;
+}
+
+.ebook-card p {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.book-price {
+  margin-top: 12px;
+  font-weight: bold;
+  color: var(--green);
+  font-size: 14px;
+}
+
+/* CORPORATE */
+
+.corporate {
+  background: var(--navy);
+  color: white;
+}
+
+.corporate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.corporate h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.corporate p {
+  color: #c5d0dc;
+}
+
+.corporate-list {
+  display: grid;
+  gap: 13px;
+  margin: 25px 0;
+}
+
+.corporate-list div {
+  padding: 13px;
+  background: #ffffff10;
+  border-radius: 10px;
+}
+
+/* ARTICLES */
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.article-card {
+  background: white;
+  border: 1px solid #e9eee9;
+  border-radius: 17px;
+  overflow: hidden;
+}
+
+.article-cover {
+  height: 145px;
+  display: grid;
+  place-items: center;
+  font-size: 40px;
+}
+
+.article-content {
+  padding: 18px;
+}
+
+.article-content small {
+  color: var(--green);
+  font-weight: bold;
+}
+
+.article-content h3 {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.article-content p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* CTA */
+
+.cta {
+  padding: 55px 0;
+}
+
+.cta-box {
+  background: var(--green-dark);
+  border-radius: 24px;
+  padding: 42px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.cta-box h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.cta-box p {
+  color: #d2e4d9;
+}
+
+.cta-box .btn {
+  background: white;
+  color: var(--green-dark);
+  white-space: nowrap;
+}
+
+/* FOOTER */
+
+footer {
+  background: white;
+  border-top: 1px solid #e9eee9;
+  padding: 30px 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* MOBILE */
+
+@media(max-width:950px) {
+  .services,.ebook-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media(max-width:700px) {
+  .nav { min-height: 66px; }
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 66px;
+    left: 4%;
+    right: 4%;
+    background: white;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu.open { display: flex; }
+  .menu-toggle { display: block; }
+  .nav .btn { display: none; }
+
+  .hero { padding: 45px 0; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero h1 { letter-spacing: -1px; }
+  .hero-visual { min-height: 320px; }
+
+  section { padding: 48px 0; }
+
+  .services { grid-template-columns: 1fr 1fr; gap: 11px; }
+  .service-card { padding: 15px; }
+  .service-card p { font-size: 12px; }
+
+  .test-grid,.video-grid,.article-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counsel-grid,.corporate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .counsel-box { padding: 25px; }
+
+  .ebook-grid { grid-template-columns: 1fr 1fr; gap: 11px; }
+  .ebook-card { padding: 10px; }
+  .book-cover { height: 160px; padding: 14px; }
+  .book-cover strong { font-size: 20px; }
+
+  .corporate h2 { font-size: 29px; }
+
+  .cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px;
+  }
+
+  .cta-box h2 { font-size: 25px; }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home"><span class="logo">✦</span> MindSpace</a>
-    <nav class="navlinks" id="navlinks"><a href="#layanan">Layanan</a><a href="#keunggulan">Keunggulan</a><a href="#cara">Cara Kerja</a><a href="#tentang">Tentang</a></nav>
-    <a href="#layanan" class="btn btn-primary">Mulai Jelajahi ↗</a>
-    <button class="menu-btn" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
-  </div>
+<div class="container nav">
+  <a class="logo" href="#">
+    AKSELERASI<span>.</span>
+  </a>
+
+  <nav class="nav-menu" id="navMenu">
+    <a href="#psikotes">Psikotes</a>
+    <a href="#konseling">Konseling</a>
+    <a href="#learning">Learning</a>
+    <a href="#ebook">E-Book</a>
+    <a href="#corporate">Corporate</a>
+  </nav>
+
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <a class="btn btn-green" href="#layanan">Mulai Sekarang</a>
+</div>
 </header>
-<main>
-<section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">✦ Platform psikologi & edukasi digital</span>
-      <h1>Kenali diri.<br><span>Tumbuh lebih baik.</span></h1>
-      <p>Temukan insight tentang diri Anda melalui psikotes, konsultasi bersama profesional, kelas video, dan bacaan edukatif dalam satu platform.</p>
-      <div class="hero-actions"><a class="btn btn-primary" href="#layanan">Jelajahi Layanan →</a><a class="btn btn-outline" href="#cara">Bagaimana cara kerja?</a></div>
-      <div class="trust"><div class="avatars"><span>🧠</span><span>💬</span><span>📚</span></div><span>Ruang belajar, refleksi, dan pengembangan diri</span></div>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="container hero-grid">
+
+  <div>
+    <span class="badge">✦ Psychology · Consulting · Development</span>
+
+    <h1>
+      Kenali Potensi.<br>
+      Kembangkan Kompetensi.<br>
+      <span>Akselerasi Masa Depan.</span>
+    </h1>
+
+    <p>
+      Temukan kekuatan diri, tingkatkan kualitas hidup,
+      dan kembangkan potensi melalui layanan psikologi,
+      assessment, konseling, dan pembelajaran.
+    </p>
+
+    <div class="hero-buttons">
+      <a class="btn btn-green" href="#psikotes">Jelajahi Layanan →</a>
+      <a class="btn btn-outline" href="#corporate">Untuk Perusahaan</a>
     </div>
-    <div class="visual">
-      <div class="float f1">🧠 <em>Kenali potensi Anda</em></div>
-      <div class="dash">
-        <div class="dash-top"><strong>Dashboard Pengembangan Diri</strong><span class="tag">Preview</span></div>
-        <div class="progress-card"><h3>Perjalanan Anda</h3><p>Terus eksplorasi hal baru tentang diri sendiri.</p><div class="progress"><i></i></div></div>
-        <div class="mini-grid">
-          <div class="mini"><div class="mini-icon" style="background:#e3f5f2">📝</div><strong>Psikotes</strong><small>Ukur & pahami potensi</small></div>
-          <div class="mini"><div class="mini-icon" style="background:#e5efff">🎥</div><strong>Video Kelas</strong><small>Belajar kapan saja</small></div>
-          <div class="mini"><div class="mini-icon" style="background:#efebff">💬</div><strong>Konseling</strong><small>Temukan pendamping</small></div>
-          <div class="mini"><div class="mini-icon" style="background:#fff0e9">📚</div><strong>E-Book</strong><small>Tambah wawasan</small></div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-visual-inner">🌱</div>
+    <div class="floating-card float-one">
+      🧠 Kenali Potensi
+      <small>Mulai dari diri sendiri</small>
+    </div>
+    <div class="floating-card float-two">
+      ✨ Bertumbuh Bersama
+      <small>Accelerate your potential</small>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<!-- LAYANAN -->
+
+<section id="layanan">
+<div class="container">
+
+  <div class="section-heading">
+    <small>OUR SERVICES</small>
+    <h2>Layanan untuk perjalanan pengembangan Anda</h2>
+    <p>
+      Pendekatan terintegrasi untuk membantu individu
+      maupun organisasi berkembang lebih optimal.
+    </p>
+  </div>
+
+  <div class="services">
+
+    <article class="service-card">
+      <div class="service-icon" style="background:#e2f1e6">🧠</div>
+      <h3>Psikotes Online</h3>
+      <p>
+        Kenali karakter, potensi, minat, kemampuan,
+        dan berbagai aspek diri melalui tes interaktif.
+      </p>
+      <a href="#psikotes">Jelajahi Tes →</a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon" style="background:#f0e8fa">💬</div>
+      <h3>Konseling</h3>
+      <p>
+        Ruang konsultasi bersama profesional untuk
+        membantu memahami diri dan menghadapi tantangan.
+      </p>
+      <a href="#konseling">Cari Konselor →</a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon" style="background:#fff0df">🎥</div>
+      <h3>Learning & Webinar</h3>
+      <p>
+        Materi, kelas, webinar, dan video pembelajaran
+        untuk meningkatkan wawasan serta kompetensi.
+      </p>
+      <a href="#learning">Lihat Kelas →</a>
+    </article>
+
+    <article class="service-card">
+      <div class="service-icon" style="background:#e6edfa">📚</div>
+      <h3>E-Book</h3>
+      <p>
+        Materi digital dan panduan praktis untuk
+        menemani proses belajar dan pengembangan diri.
+      </p>
+      <a href="#ebook">Jelajahi Buku →</a>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- PSIKOTES -->
+
+<section class="tests" id="psikotes">
+<div class="container">
+
+  <div class="section-heading">
+    <small>ONLINE ASSESSMENT</small>
+    <h2>Kenali diri Anda lebih dalam</h2>
+    <p>
+      Mulai dengan tes sederhana atau pilih assessment
+      yang lebih mendalam sesuai kebutuhan.
+    </p>
+  </div>
+
+  <div class="test-grid">
+
+    <article class="test-card">
+      <div class="test-cover" style="background:#e2f1e6">🧩</div>
+      <div class="test-content">
+        <h3>Tes Kepribadian</h3>
+        <p>Memahami karakter, pola perilaku, dan kecenderungan diri.</p>
+        <span class="test-tag">TES GRATIS</span>
+      </div>
+    </article>
+
+    <article class="test-card">
+      <div class="test-cover" style="background:#fff0df">💡</div>
+      <div class="test-content">
+        <h3>Minat & Bakat</h3>
+        <p>Eksplorasi potensi dan arah pengembangan karier.</p>
+        <span class="test-tag">TES GRATIS</span>
+      </div>
+    </article>
+
+    <article class="test-card">
+      <div class="test-cover" style="background:#e9e7fa">📊</div>
+      <div class="test-content">
+        <h3>Assessment Premium</h3>
+        <p>Pengukuran terstruktur dengan laporan hasil assessment.</p>
+        <span class="test-tag" style="background:#fff1d5;color:#9b711a">PREMIUM</span>
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- KONSELING -->
+
+<section id="konseling">
+<div class="container counsel-grid">
+
+  <div class="counsel-box">
+    <h3>Anda tidak harus menghadapi semuanya sendirian.</h3>
+    <p>
+      Temukan ruang aman untuk bercerita, memahami diri,
+      dan mencari solusi bersama profesional.
+    </p>
+
+    <div class="counsel-steps">
+      <div class="counsel-step">
+        <div class="step-icon">👩‍⚕️</div>
+        <div>
+          <strong>Pilih Psikolog / Konselor</strong>
+          <small>Temukan pendamping sesuai kebutuhan</small>
         </div>
       </div>
-      <div class="float f2">✨ <em>Semua dalam satu platform</em></div>
+
+      <div class="counsel-step">
+        <div class="step-icon">📅</div>
+        <div>
+          <strong>Pilih Jadwal</strong>
+          <small>Tentukan waktu konsultasi</small>
+        </div>
+      </div>
+
+      <div class="counsel-step">
+        <div class="step-icon">💻</div>
+        <div>
+          <strong>Konsultasi Online</strong>
+          <small>Video call atau metode yang tersedia</small>
+        </div>
+      </div>
     </div>
   </div>
-</section>
-<section id="layanan">
-  <div class="container">
-    <div class="section-head"><span class="eyebrow">Layanan utama</span><h2>Berbagai cara untuk<br>mengembangkan diri</h2><p>Pilih pengalaman yang sesuai dengan kebutuhan Anda, mulai dari eksplorasi mandiri hingga belajar bersama profesional.</p></div>
-    <div class="services">
-      <article class="service s1"><div class="icon">🧠</div><h3>Psikotes Online</h3><p>Kerjakan tes interaktif untuk mengenali karakter, minat, kemampuan, dan potensi diri.</p><ul><li>Pilihan tes gratis & premium</li><li>Hasil dan analisis skor</li><li>Laporan digital</li></ul><a href="#cta">Mulai psikotes →</a></article>
-      <article class="service s2"><div class="icon">🎬</div><h3>Video Berbayar</h3><p>Akses webinar, kelas, dan video edukasi pilihan sesuai minat pengembangan Anda.</p><ul><li>Materi video terkurasi</li><li>Checkout pembayaran</li><li>Akses kelas kapan saja</li></ul><a href="#cta">Jelajahi kelas →</a></article>
-      <article class="service s3"><div class="icon">💬</div><h3>Konseling Online</h3><p>Terhubung dengan psikolog atau konselor melalui sesi online yang terjadwal.</p><ul><li>Pilih profesional</li><li>Pilih metode sesi</li><li>Booking jadwal</li></ul><a href="#cta">Cari konselor →</a></article>
-      <article class="service s4"><div class="icon">📚</div><h3>Book Store</h3><p>Temukan e-book dan materi pembelajaran untuk menemani perjalanan Anda.</p><ul><li>Katalog digital</li><li>Pembayaran online</li><li>Download praktis</li></ul><a href="#cta">Lihat e-book →</a></article>
+
+  <div>
+    <div class="section-heading">
+      <small>PROFESSIONAL SUPPORT</small>
+      <h2>Temukan dukungan yang tepat untuk Anda</h2>
+      <p>
+        Konsultasi personal untuk membantu memahami
+        tantangan, mengembangkan diri, dan menemukan
+        langkah yang lebih baik.
+      </p>
     </div>
+
+    <a class="btn btn-green" href="#kontak">Booking Konseling →</a>
   </div>
+
+</div>
 </section>
-<section class="feature" id="keunggulan">
- <div class="container feature-grid">
-  <div class="feature-panel"><h3>Belajar & berkembang<br>di satu tempat.</h3><p>Platform terintegrasi untuk mendukung pengalaman pengguna yang mudah, praktis, dan terarah.</p><div class="feature-stat"><div class="stat"><strong>4</strong><small>Layanan utama</small></div><div class="stat"><strong>1</strong><small>Platform terpadu</small></div><div class="stat"><strong>24/7</strong><small>Akses digital</small></div></div></div>
-  <div><div class="section-head" style="text-align:left;margin:0 0 24px"><span class="eyebrow">Mengapa platform ini?</span><h2>Pengalaman digital yang mudah dan nyaman</h2></div><div class="feature-list">
-   <div class="feature-item"><span class="check">✓</span><div><h4>Praktis & terintegrasi</h4><p>Jelajahi tes, kelas, konseling, dan e-book dari satu akun.</p></div></div>
-   <div class="feature-item"><span class="check">✓</span><div><h4>Transaksi lebih mudah</h4><p>Alur checkout pembayaran digital yang ringkas dan nyaman.</p></div></div>
-   <div class="feature-item"><span class="check">✓</span><div><h4>Akses fleksibel</h4><p>Konten digital dapat dinikmati sesuai waktu dan kebutuhan pengguna.</p></div></div>
-   <div class="feature-item"><span class="check">✓</span><div><h4>Privasi & keamanan</h4><p>Pengalaman yang dirancang dengan perhatian pada privasi data pengguna.</p></div></div>
-  </div></div>
- </div>
+
+<!-- VIDEO & LEARNING -->
+
+<section class="video-section" id="learning">
+<div class="container">
+
+  <div class="section-heading">
+    <small>LEARNING & DEVELOPMENT</small>
+    <h2>Belajar dan berkembang kapan saja</h2>
+    <p>
+      Webinar, video pembelajaran, dan kelas pilihan
+      yang dirancang untuk mendukung pengembangan diri.
+    </p>
+  </div>
+
+  <div class="video-grid">
+
+    <article class="video-card">
+      <div class="video-cover" style="background:#d9eddf;color:#286348">
+        <span>SELF DEVELOPMENT</span>
+        <strong>Mengenal<br>Diri Sendiri</strong>
+      </div>
+      <div class="video-content">
+        <h3>Self Awareness & Personal Growth</h3>
+        <p>Video pembelajaran · 5 materi</p>
+        <div class="video-bottom">
+          <span>Video Class</span>
+          <span>Rp 79.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <div class="video-cover" style="background:#f6dfc6;color:#875d39">
+        <span>WEBINAR</span>
+        <strong>Kelola Emosi<br>Lebih Baik</strong>
+      </div>
+      <div class="video-content">
+        <h3>Emotional Intelligence</h3>
+        <p>Webinar · Materi & rekaman</p>
+        <div class="video-bottom">
+          <span>Webinar</span>
+          <span>Rp 99.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="video-card">
+      <div class="video-cover" style="background:#e6e5f9;color:#514a8a">
+        <span>CAREER DEVELOPMENT</span>
+        <strong>Potensi &<br>Karier</strong>
+      </div>
+      <div class="video-content">
+        <h3>Career Planning & Development</h3>
+        <p>Online class · 4 modul</p>
+        <div class="video-bottom">
+          <span>Premium Class</span>
+          <span>Rp 149.000</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</div>
 </section>
-<section id="cara">
- <div class="container"><div class="section-head"><span class="eyebrow">Mulai dengan mudah</span><h2>Bagaimana cara menggunakan platform?</h2><p>Alur sederhana untuk membantu pengguna mendapatkan layanan yang dibutuhkan.</p></div>
- <div class="steps"><div class="step"><div class="step-no">01</div><h3>Buat akun & pilih layanan</h3><p>Daftar atau masuk, lalu pilih psikotes, video, konseling, atau e-book.</p></div><div class="step"><div class="step-no">02</div><h3>Selesaikan proses</h3><p>Kerjakan tes, pilih konten, booking jadwal, atau lakukan pembayaran sesuai layanan.</p></div><div class="step"><div class="step-no">03</div><h3>Nikmati hasil & akses</h3><p>Lihat hasil tes, ikuti sesi, tonton video, atau akses e-book yang telah dibeli.</p></div></div>
- </div>
+
+<!-- EBOOK -->
+
+<section id="ebook">
+<div class="container">
+
+  <div class="section-heading">
+    <small>DIGITAL LIBRARY</small>
+    <h2>Materi untuk terus bertumbuh</h2>
+    <p>
+      E-book dan panduan praktis untuk menemani
+      perjalanan pengembangan diri Anda.
+    </p>
+  </div>
+
+  <div class="ebook-grid">
+
+    <article class="ebook-card">
+      <div class="book-cover" style="background:#34785f">
+        <small>AKSELERASI CONSULTING</small>
+        <strong>Kenali<br>Dirimu</strong>
+      </div>
+      <h3>Workbook Eksplorasi Diri</h3>
+      <p>Latihan dan refleksi mengenali diri.</p>
+      <div class="book-price">Rp 49.000</div>
+    </article>
+
+    <article class="ebook-card">
+      <div class="book-cover" style="background:#bd7955">
+        <small>AKSELERASI CONSULTING</small>
+        <strong>Emosi &<br>Ketenangan</strong>
+      </div>
+      <h3>Memahami Emosi</h3>
+      <p>Belajar memahami dan mengelola emosi.</p>
+      <div class="book-price">Rp 39.000</div>
+    </article>
+
+    <article class="ebook-card">
+      <div class="book-cover" style="background:#5866a9">
+        <small>AKSELERASI CONSULTING</small>
+        <strong>Karier &<br>Potensi</strong>
+      </div>
+      <h3>Menemukan Potensi Karier</h3>
+      <p>Panduan eksplorasi karier dan kompetensi.</p>
+      <div class="book-price">Rp 59.000</div>
+    </article>
+
+    <article class="ebook-card">
+      <div class="book-cover" style="background:#788a55">
+        <small>AKSELERASI CONSULTING</small>
+        <strong>Growth<br>Mindset</strong>
+      </div>
+      <h3>Mindset Bertumbuh</h3>
+      <p>Membangun kebiasaan belajar berkelanjutan.</p>
+      <div class="book-price">Rp 45.000</div>
+    </article>
+
+  </div>
+</div>
 </section>
-<section id="tentang" class="cta"><div class="container"><div class="cta-box" id="cta"><div><h2>Mulai perjalanan Anda hari ini.</h2><p>Kenali potensi, tambah wawasan, dan temukan dukungan yang tepat.</p></div><a class="btn" href="mailto:hello@mindspace.id?subject=Informasi%20Platform">Hubungi Kami ↗</a></div></div></section>
-</main>
-<footer><div class="container footer"><div><strong>✦ MindSpace</strong> — Platform Psikologi & Pembelajaran Digital</div><div>© <span id="year"></span> MindSpace. Demo landing page.</div></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));</script>
+
+<!-- CORPORATE -->
+
+<section class="corporate" id="corporate">
+<div class="container corporate-grid">
+
+  <div>
+    <small style="color:#a9d5bd;font-weight:bold">CORPORATE SOLUTIONS</small>
+    <h2>Solusi pengembangan SDM untuk organisasi</h2>
+    <p>
+      Mendukung organisasi dalam proses pengembangan
+      talent, assessment, rekrutmen, dan peningkatan
+      kompetensi karyawan.
+    </p>
+
+    <div class="corporate-list">
+      <div>✓ Recruitment & Selection Assessment</div>
+      <div>✓ Employee Potential Assessment</div>
+      <div>✓ Training & Development</div>
+      <div>✓ Corporate Consulting</div>
+    </div>
+
+    <a class="btn btn-green" href="#kontak">Konsultasi Perusahaan →</a>
+  </div>
+
+  <div style="background:#ffffff12;border-radius:22px;padding:35px;text-align:center">
+    <div style="font-size:75px">🏢</div>
+    <h3 style="font-size:24px;margin:10px">People. Potential. Performance.</h3>
+    <p style="color:#c4d3df">
+      Membantu perusahaan mengembangkan potensi
+      manusia dan organisasi.
+    </p>
+  </div>
+
+</div>
+</section>
+
+<!-- ARTICLES -->
+
+<section>
+<div class="container">
+
+  <div class="section-heading">
+    <small>INSIGHT & ARTICLES</small>
+    <h2>Insight untuk kehidupan dan karier</h2>
+    <p>Artikel seputar psikologi, pengembangan diri, dan dunia kerja.</p>
+  </div>
+
+  <div class="article-grid">
+
+    <article class="article-card">
+      <div class="article-cover" style="background:#e3f0e6">🌱</div>
+      <div class="article-content">
+        <small>PERSONAL DEVELOPMENT</small>
+        <h3>Mulai mengenal diri dan memahami potensi</h3>
+        <p>Refleksi sederhana untuk mengenali kekuatan dan hal yang penting bagi diri.</p>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-cover" style="background:#fff0df">🧠</div>
+      <div class="article-content">
+        <small>PSYCHOLOGY</small>
+        <h3>Mengapa memahami emosi itu penting?</h3>
+        <p>Mengenali emosi sebagai bagian dari proses memahami diri.</p>
+      </div>
+    </article>
+
+    <article class="article-card">
+      <div class="article-cover" style="background:#e9e7fa">🚀</div>
+      <div class="article-content">
+        <small>CAREER</small>
+        <h3>Mengembangkan kompetensi di dunia kerja</h3>
+        <p>Belajar mengembangkan keterampilan dan potensi profesional.</p>
+      </div>
+    </article>
+
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+
+<section id="kontak">
+<div class="container">
+  <div class="cta-box">
+    <div>
+      <h2>Siap mengakselerasi potensi Anda?</h2>
+      <p>Mulai perjalanan pengembangan diri bersama Akselerasi Consulting.</p>
+    </div>
+    <a class="btn" href="mailto:info@akselerasiconsulting.com">
+      Hubungi Kami →
+    </a>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container footer-grid">
+  <div>
+    <strong style="color:#205640">AKSELERASI CONSULTING</strong><br>
+    Accelerate Your Potential.
+  </div>
+  <div>
+    © <span id="year"></span> Akselerasi Consulting.
+    All Rights Reserved.
+  </div>
+</div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('navMenu').classList.toggle('open');
+}
+
+document.querySelectorAll('#navMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('navMenu').classList.remove('open');
+  });
+});
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+</script>
+
 </body>
 </html>
